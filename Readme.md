@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Светлана Осипенко](https://up.htmlacademy.ru/htmlcss/26/user/1080109).
-* Наставник: 'Дмитрий Иовлев`.
+* Наставник: [Дмитрий Иовлев](https://htmlacademy.ru/profile/skywalker).
 
 ---
 
