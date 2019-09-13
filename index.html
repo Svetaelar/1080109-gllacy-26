@@ -9,7 +9,7 @@
       <a><img src="img/logo.svg" alt="Логотип компании GllacyShop"></a>
       <nav>
         <ul>
-          <li>Каталог
+          <li><button type="button">Каталог</button>
             <ul>
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -36,10 +36,10 @@
         
     </header>
     <main>
-      <h1>Магазин мороженного GllacyShop</h1>
+      <h1 class="visually-hidden">Магазин мороженного GllacyShop</h1>
       
       <section>
-        <h2>Слайдер</h2>
+        <h2 class="visually-hidden">Слайдер</h2>
         <ul>
           <li>
             <h3>Крем брюле и пломбир с малиновым джемом</h3>
@@ -67,7 +67,7 @@
       </section>
 
       <section>
-        <h2>Текущие акции</h2>
+        <h2 class="visually-hidden">Текущие акции</h2>
         <ul>
           <li>
             <h3>Малинка даром</h3>
@@ -83,7 +83,7 @@
       </section>
 
       <section>
-        <h2>Хиты продаж</h2>
+        <h2 class="visually-hidden">Хиты продаж</h2>
         <ul>
           <li>
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -121,7 +121,7 @@
       </section>
 
       <section>
-        <h2>Преимущества магазина</h2>
+        <h2 class="visually-hidden">Преимущества магазина</h2>
         <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</h3>
         <ul>
           <li>
@@ -146,14 +146,14 @@
         </article>
 
         <section>
-          <h2>Подписка на рассылку</h2>
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
           <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
         </section>
      </div>
 
       <section>
-        <h2>Как нас найти</h2>
-        <img src="img/map.jpg" width="1200" height="430" alt="">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <img src="img/map.jpg" width="1200" height="430" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div>
           <address>
             <p>Адрес главного офиса и офлайн магазина</p>
@@ -164,16 +164,56 @@
           </address>
           <a href="#">Форма обратной связи</a>
         </div>
-
       </section>
+      <section>
+        <h2 class="visually-hidden">Поиск по сайту</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden">Что ищем?
+            <input type="search" name="search" value="" placeholder="Что ищем?">
+          </label>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Форма авторизации</h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden">Емайл
+            <input type="email" name="email" value="" placeholder="электронная почта">
+          </label>
+          <label class="visually-hidden">Пароль
+            <input type="password" name="password" value="" placeholder="пароль">
+          </label>
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
+      </section>
+      <section>
+          <h2 class="visually-hidden">Форма обратной связи</h2>
+          <p>Мы обязательно вам ответим</p>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden">Имя
+              <input type="text" name="text" value="" placeholder="Как вас зовут?">
+            </label>
+            <label class="visually-hidden">Емайл
+              <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+            </label>
+            <label class="visually-hidden">Тикет
+             <textarea cols="3" name="ticket" placeholder="Напишите что-нибудь" ></textarea>
+            </label>
+            <button type="submit">Отправить</button>
+          </form>
+          <button type="button" aria-label="закрыть">X</button>
+        </section>
+
+
 
     </main>
     <footer>
       <ul>
-        <li><a href=""><img src="img/twitter.svg" width="32" height="32"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32"></a></li>
-        <li><a href=""><img src="img/fb.svg" width="32" height="32"></a></li>
-        <li><a href=""><img src="img/vk.svg" width="32" height="32"></a></li>
+        <li><a href=""><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
+        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
+        <li><a href=""><img src="img/fb.svg" width="32" height="32" alt="Фейсбук "></a></li>
+        <li><a href=""><img src="img/vk.svg" width="32" height="32" alt="Вконтакте "></a></li>
       </ul>
 
       <ul>
