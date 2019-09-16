@@ -11,25 +11,69 @@
           <img src="img/logo.svg" width="150" height="100" alt="Логотип компании GllacyShop">
         </a>
         <ul>
-          <li><button type="button">Каталог</button>
+          <li><a href="#">Каталог</li>
             <ul>
-              <li><a href="">Новинки</a></li>
+              <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="">Щербеты</a></li>
-              <li><a href="">Фруктовый лед</a></li>
-              <li><a href="">Мелорин</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <button>Поиск</button>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <button type="submit" href="#" ></button>
+          <p>
+            <label for="id-search" class="visually-hidden">Поиск по сайту</label>
+            <input id="id-search" type="search" name="search" value="" placeholder="Что ищем?">
+          </p>  
+        </form>
+
         <ul>
           <li>
-            <a href="">Вход</a>
+            <a href="#">Вход</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="user-email" class="visually-hidden">Емайл</label>
+              <input id="user-email" type="email" name="email" value="" placeholder="электронная почта">
+              <label for="user-password" class="visually-hidden">Пароль
+              <input id="user-password" type="password" name="password" value="" placeholder="пароль"> </label>
+              
+              <button type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
           </li>
         </ul>
-        <a href="">Корзина</a>
+        <a href="#">2 товара</a>
+        <div>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <table>
+              <tr>
+                <td><button class="button" aria-label="Удалить"></button></td>
+                <td><img src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                <td>Пломбир с апельсиновым джемом</td>
+                <td><input type="text" name="number" value="1.5" readonly > кг</td>
+                <td>X<input type="text" name="unit price" value="200" readonly > руб</td>
+                <td><input type="text" name="total-price" value="300" readonly > руб</td>
+              </tr>
+              <tr>
+                <td><button class="button" aria-label="Удалить"></button></td>
+                <td><img src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td><input type="text" name="number" value="1.5" readonly > кг</td>
+                <td>X<input type="text" name="unit price" value="300" readonly > руб</td>
+                <td><input type="text" name="total-price" value="450" readonly > руб</td>
+              </tr>
+              <tr>
+                <td colspan="7">Итого<input type="text" name="order-price" value="750" readonly > руб </td>
+              </tr>
+            </table>
+            <button type="submit">Заказать</button>
+          </form>
+        </div>
       </nav>
       <address>
         <p>с 10 до 20, ежедневно</p>
@@ -56,73 +100,73 @@
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой
               </h3>
             <p><img src="img/1_1.jpg" width="267" height="267" alt="Оранжевое мороженое"></p>
-            <p>310 P</p><span>/кг</span>
+            <p>310 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
             <p><img src="img/1_2.jpg" width="267" height="267" alt="Шоколадное мороженое"></p>
-            <p>380 P</p><span>/кг</span>
+            <p>380 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <p><img src="img/1_3.jpg" width="267" height="267" alt="Розовое мороженое"></p>
-            <p>355 P</p><span>/кг</span>
+            <p>355 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             <p><img src="img/1_4.jpg" width="267" height="267" alt="Желтое мороженое с карамелью"></p>
-            <p>415 P</p><span>/кг</span>
+            <p>415 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочное с брусничным джемом</h3>
             <p><img src="img/2_1.jpg" width="267" height="267" alt="Розовое мороженое"></p>
-            <p>325 P</p><span>/кг</span>
+            <p>325 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочно-черничное с цельными ягодами черники </h3>
             <p><img src="img/2_2.jpg" width="267" height="267" alt="Белое мороженое с черникой"></p>
-            <p>410 P</p><span>/кг</span>
+            <p>410 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             <p><img src="img/2_3.jpg" width="267" height="267" alt="Жетое мороженое с карамелью"></p>
-            <p>375 P</p><span>/кг</span>
+            <p>375 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочное с шоколадной стружкой</h3>
             <p><img src="img/2_4.jpg" width="267" height="267" alt="Белое мороженое с шоколадной стружкой"></p>
-            <p>320 P</p><span>/кг</span>
+            <p>320 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочно-ванильное с кусочками шоколада</h3>
             <p><img src="img/3_1.jpg" width="267" height="267" alt="Желтое мороженое с шоколадом"></p>
-            <p>440 P</p><span>/кг</span>
+            <p>440 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочноe с ментоловым сиропом</h3>
             <p><img src="img/3_2.jpg" width="267" height="267" alt="Голубое мороженое"></p>
-            <p>435 P</p><span>/кг</span>
+            <p>435 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочное с кусочками черного шоколада</h3>
             <p><img src="img/3_3.jpg" width="267" height="267" alt="Белое мороженое с шоколадом"></p>
-            <p>355 P</p><span>/кг</span>
+            <p>355 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
            <li>
             <h3>Сливочное с мятным сиропом</h3>
             <p><img src="img/3_4.jpg" width="267" height="267" alt="Зеленое мороженое"></p>
-            <p>420 P</p><span>/кг</span>
+            <p>420 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
         </ul>
@@ -136,35 +180,14 @@
           <li><a href="">></a></li>
         </ul>
       </section>
-
-      <section>
-        <h2 class="visually-hidden">Содержимое корзины</h2>
-        <ul>
-          <li>
-            <span>X</span>
-            <h3>Пломбир с апельсиновым джемом</h3>
-            <p><img src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></p>
-            <span>1.5 кг</span>X<span>200 руб</span>
-            <span>300 руб</span>
-          </li>
-          <li>
-            <span>X</span>
-            <h3>Клубничный пломбир с присыпкой из белого шоколада</h3>
-            <p><img src="img/2_mini.jpg" width="33" height="33" alt="Розовое мороженое"></p>
-            <span>1.5 кг</span>X<span>300 руб</span>
-            <span>450 руб</span>
-          </li>
-        </ul>
-
-      </section>
       
     </main>
     <footer>
       <ul>
-        <li><a href=""><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-        <li><a href=""><img src="img/fb.svg" width="32" height="32" alt="Фейсбук "></a></li>
-        <li><a href=""><img src="img/vk.svg" width="32" height="32" alt="Вконтакте "></a></li>
+        <li><a href="" aria-label="Твиттер"></a></li>
+        <li><a href="" aria-label="Инстаграм"></a></li>
+        <li><a href="" aria-label="Фейсбук"></a></li>
+        <li><a href="" aria-label="Вконтакте"></a></li>
       </ul>
 
       <ul>

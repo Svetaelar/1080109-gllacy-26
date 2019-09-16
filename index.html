@@ -9,7 +9,7 @@
       <a><img src="img/logo.svg" alt="Логотип компании GllacyShop"></a>
       <nav>
         <ul>
-          <li><button type="button">Каталог</button>
+          <li><a href="#">Каталог</li>
             <ul>
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -21,13 +21,32 @@
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <button>Поиск</button>
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <button type="submit" href="#" ></button>
+          <p>
+            <label for="id-search" class="visually-hidden">Поиск по сайту</label>
+            <input id="id-search" type="search" name="search" value="" placeholder="Что ищем?">
+          </p>  
+        </form>
+
         <ul>
           <li>
-              <a href="#">Вход</a>
+            <a href="#">Вход</a>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label for="user-email" class="visually-hidden">Емайл</label>
+              <input id="user-email" type="email" name="email" value="" placeholder="электронная почта">
+              <label for="user-password" class="visually-hidden">Пароль
+              <input id="user-password" type="password" name="password" value="" placeholder="пароль"> </label>
+              
+              <button type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
           </li>
         </ul>
-        <a href="">Корзина</a>
+        <a href="" aria-label="Корзина">пусто</a>
+
       </nav>
       <address>
         <p>с 10 до 20, ежедневно</p>
@@ -90,7 +109,7 @@
             <p><img src="img/1_1.jpg" alt="Оранжевое мороженое с белой стружкой"></p>
             <!--Класс хит-->
             <p></p> 
-            <p>310 P</p><span>/кг</span>
+            <p>310 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
           <li>
@@ -98,7 +117,7 @@
             <p><img src="img/1_2.jpg" width="267" height="267" alt="Шоколадное мороженое с шоколадом"></p>
             <!--Класс хит-->
             <p></p> 
-            <p>310 P</p><span>/кг</span>
+            <p>380 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
           <li>
@@ -106,7 +125,7 @@
             <p><img src="img/1_3.jpg" width="267" height="267" alt="Розовое мороженое с белым шоколадом"></p>
             <!--Класс хит-->
             <p></p> 
-            <p>310 P</p><span>/кг</span>
+            <p>355 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
           <li>
@@ -114,7 +133,7 @@
             <p><img src="img/1_4.jpg"  width="267" height="267" alt="Сливочное мороженое с карамелью"></p>
             <!--Класс хит-->
             <p></p> 
-            <p>310 P</p><span>/кг</span>
+            <p>415 ₽<span>/кг</span></p>
             <a href="">Быстрый просмотр</a>
           </li>
         </ul>
@@ -165,55 +184,32 @@
           <a href="#">Форма обратной связи</a>
         </div>
       </section>
-      <section>
-        <h2 class="visually-hidden">Поиск по сайту</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden">Что ищем?
-            <input type="search" name="search" value="" placeholder="Что ищем?">
-          </label>
-        </form>
-      </section>
-      <section>
-        <h2 class="visually-hidden">Форма авторизации</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <label class="visually-hidden">Емайл
-            <input type="email" name="email" value="" placeholder="электронная почта">
-          </label>
-          <label class="visually-hidden">Пароль
-            <input type="password" name="password" value="" placeholder="пароль">
-          </label>
-          <button type="submit">Войти</button>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </form>
-      </section>
-      <section>
+      
+      <div>
           <h2 class="visually-hidden">Форма обратной связи</h2>
           <p>Мы обязательно вам ответим</p>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden">Имя
-              <input type="text" name="text" value="" placeholder="Как вас зовут?">
-            </label>
-            <label class="visually-hidden">Емайл
-              <input type="email" name="email" value="" placeholder="Ваша почта для ответа?">
-            </label>
-            <label class="visually-hidden">Тикет
-             <textarea cols="3" name="ticket" placeholder="Напишите что-нибудь" ></textarea>
-            </label>
+            <label for="feedback-name" class="visually-hidden">Имя</label>
+            <input id="feedback-name" type="text" name="text" value="" placeholder="Как вас зовут?">
+            
+            <label for="feedback-email" class="visually-hidden">Емайл</label>
+            <input id="feedback-email" type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+            <label for="feedback-text" class="visually-hidden">Емайл</label>
+            <textarea id="feedback-text" cols="3" name="ticket">Напишите что-нибудь...</textarea>
             <button type="submit">Отправить</button>
           </form>
-          <button type="button" aria-label="закрыть">X</button>
-        </section>
+          <button type="button" aria-label="закрыть"></button>
+        </div>
 
 
 
     </main>
     <footer>
-      <ul>
-        <li><a href=""><img src="img/twitter.svg" width="32" height="32" alt="Твиттер"></a></li>
-        <li><a href=""><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a></li>
-        <li><a href=""><img src="img/fb.svg" width="32" height="32" alt="Фейсбук "></a></li>
-        <li><a href=""><img src="img/vk.svg" width="32" height="32" alt="Вконтакте "></a></li>
+       <ul>
+        <li><a href="" aria-label="Твиттер"></a></li>
+        <li><a href="" aria-label="Инстаграм"></a></li>
+        <li><a href="" aria-label="Фейсбук"></a></li>
+        <li><a href="" aria-label="Вконтакте"></a></li>
       </ul>
 
       <ul>
