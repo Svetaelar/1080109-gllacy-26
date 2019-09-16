@@ -89,8 +89,59 @@
       <h1>Сливочное мороженное</h1>
 
       <section>
-        <h2 class="visually-hidden">Фильтр товаров</h2>
-      
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <fieldset>
+            <legend>Соритровка</legend>
+            <select name="sort">
+              <option value="popular">по-популярности</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>Цена</legend>
+            <div>
+              <input type="text" name="min" value="100" readonly> руб - 
+              <input type="text" name="max" value="500" readonly> руб
+              <div>
+                <button type="button" aria-label="min"></button>
+                <button type="button" aria-label="max"></button>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Жирность:</legend>
+            <label>
+              <input type="radio" name="fat" value="0%">0%
+            </label>
+            <label>
+              <input type="radio" name="fat" value="до 10%" checked>до 10%
+            </label>
+            <label>
+              <input type="radio" name="fat" value="до 30%">до 30%
+            </label>
+            <label>
+              <input type="radio" name="fat" value="выше 30%">выше 30%
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Наполнители</legend>
+            <label>
+              <input type="checkbox" name="chocolate" checked> Шоколадные 
+            </label>
+            <label>
+              <input type="checkbox" name="shugar" checked> Сахарные присыпки 
+            </label>
+            <label>
+              <input type="checkbox" name="fruits"> Фрукты 
+            </label>
+            <label>
+              <input type="checkbox" name="syrup"> Сиропы 
+            </label>
+            <label>
+              <input type="checkbox" name="jam"> Джемы 
+            </label>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
       </section>
 
       <section>
