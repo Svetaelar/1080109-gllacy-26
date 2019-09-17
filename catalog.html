@@ -28,7 +28,7 @@
           <button type="submit" href="#" ></button>
           <p>
             <label for="id-search" class="visually-hidden">Поиск по сайту</label>
-            <input id="id-search" type="search" name="search" value="" placeholder="Что ищем?">
+            <input id="id-search" type="text" name="search" value="" placeholder="Что ищем?">
           </p>  
         </form>
 
@@ -52,23 +52,23 @@
           <form action="https://echo.htmlacademy.ru" method="post">
             <table>
               <tr>
-                <td><button class="button" aria-label="Удалить"></button></td>
+                <td><button type="button" aria-label="Удалить"></button></td>
                 <td><img src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td><input type="text" name="number" value="1.5" readonly > кг</td>
-                <td>X<input type="text" name="unit price" value="200" readonly > руб</td>
-                <td><input type="text" name="total-price" value="300" readonly > руб</td>
+                <td><input type="hidden" name="title" value="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
+                <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
+                <td>X<input type="hidden" name="unit price" value="200"> 200 руб</td>
+                <td><input type="hidden" name="total-price" value="300"> 300 руб</td>
               </tr>
               <tr>
                 <td><button class="button" aria-label="Удалить"></button></td>
                 <td><img src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td><input type="text" name="number" value="1.5" readonly > кг</td>
-                <td>X<input type="text" name="unit price" value="300" readonly > руб</td>
-                <td><input type="text" name="total-price" value="450" readonly > руб</td>
+                <td><input type="hidden" name="title" value="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
+                <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
+                <td>X<input type="hidden" name="unit price" value="300"> 300 руб</td>
+                <td><input type="hidden" name="total-price" value="450"> 450 руб</td>
               </tr>
               <tr>
-                <td colspan="7">Итого<input type="text" name="order-price" value="750" readonly > руб </td>
+                <td colspan="7">Итого<input type="hidden" name="order-price" value="750" readonly > 750 руб </td>
               </tr>
             </table>
             <button type="submit">Заказать</button>
@@ -94,51 +94,45 @@
             <legend>Соритровка</legend>
             <select name="sort">
               <option value="popular">по-популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по-жирности</option>
             </select>
           </fieldset>
           <fieldset>
             <legend>Цена</legend>
             <div>
-              <input type="text" name="min" value="100" readonly> руб - 
-              <input type="text" name="max" value="500" readonly> руб
+              <input type="text" name="min" value="100" aria-label="минимальная" readonly> руб - 
+              <input type="text" name="max" value="500" aria-label="максимальная" readonly> руб
               <div>
-                <button type="button" aria-label="min"></button>
-                <button type="button" aria-label="max"></button>
+                <button type="button" aria-label="минимальное значение"></button>
+                <button type="button" aria-label="максимальное значение"></button>
               </div>
             </div>
           </fieldset>
           <fieldset>
             <legend>Жирность:</legend>
-            <label>
-              <input type="radio" name="fat" value="0%">0%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="до 10%" checked>до 10%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="до 30%">до 30%
-            </label>
-            <label>
-              <input type="radio" name="fat" value="выше 30%">выше 30%
-            </label>
+            <input class="visually-hidden" id="first-fat" type="radio" name="fat" value="0">
+            <label for="first-fat"> 0%</label>
+            <input class="visually-hidden" id="second-fat" type="radio" name="fat" value="0">
+            <label for="second-fat"> 10%</label>
+            <input class="visually-hidden" id="third-fat" type="radio" name="fat" value="0">
+            <label for="third-fat"> до 30%</label>
+            <input class="visually-hidden" id="fourth-fat" type="radio" name="fat" value="0">
+            <label for="fourth-fat"> выше 30%</label>
           </fieldset>
           <fieldset>
             <legend>Наполнители</legend>
-            <label>
-              <input type="checkbox" name="chocolate" checked> Шоколадные 
-            </label>
-            <label>
-              <input type="checkbox" name="shugar" checked> Сахарные присыпки 
-            </label>
-            <label>
-              <input type="checkbox" name="fruits"> Фрукты 
-            </label>
-            <label>
-              <input type="checkbox" name="syrup"> Сиропы 
-            </label>
-            <label>
-              <input type="checkbox" name="jam"> Джемы 
-            </label>
+            <input class="visually-hidden" id="chocolate" type="checkbox" name="chocolate" checked> 
+            <label for="chocolate">Шоколадные</label>
+            <input class="visually-hidden" id="shugar" type="checkbox" name="shugar" checked> 
+            <label for="shugar"> Сахарные присыпки </label>
+            <input class="visually-hidden" id="fruits" type="checkbox" name="fruits"> 
+            <label for="fruits">Фрукты</label> 
+            <input class="visually-hidden" id="syrup" type="checkbox" name="syrup"> 
+            <label for="syrup">Сиропы</label> 
+            <input class="visually-hidden" id="jam" type="checkbox" name="jam"> 
+            <label for="jam">Джемы</label> 
           </fieldset>
           <button type="submit">Применить</button>
         </form>
