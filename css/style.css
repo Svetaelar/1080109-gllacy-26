@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../roboto/roboto.woff") format("woff");
+  }
+
 body {
     margin: 0;
     padding: 0;
@@ -11,11 +16,13 @@ body {
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
-    …
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
   }
 
 a {
@@ -23,25 +30,19 @@ a {
     color: #ffffff;
 }
 
-.basket, 
-.user-navigation,
-.search {
+.nav-item {
     font-weight: medium;
     font-size: 14px;
     line-height: 16px;
-    text-align: right;
-    width: 103px;
     height: 36px;
-    opacity: 0.2;
-    background: #FFFFFF;
+    color: rgba: (255, 255, 255, 0.2);
     border-radius: 30%;
 }
 
 .search {
     width: 35px;
     height: 35px;
-    opacity: 0.2;
-    background: #FFFFFF;
+    background: rgba: (255, 255, 255, 0.2);
     border-radius: 50%;
 }
 
@@ -50,13 +51,9 @@ a {
     color: #ffffff;
 }
 
-.user-navigation:hover,
-.user-navigation:focus,
-.basket:hover,
-.basket:focus,
-.search:hover {
-    background: #F8F7F4;
-    opacity: 0.9;
+.nav-item:hover,
+.nav-item:focus {
+    background: rgba: (255, 255, 255, 0.9);
     color: #323232;
 }
 
@@ -66,8 +63,12 @@ a {
     color: #323232;
 }
 
-address {
+.address {
     font-style: normal;
+}
+ 
+.top-address {
+    text-align: right;
 }
 
 .main-navigation {
@@ -144,7 +145,7 @@ address {
     font-weight: bold;
     font-style: normal;
     font-size: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 24px;
 }
 
@@ -163,49 +164,49 @@ address {
     font-weight: bold;
 }
 
-.shares-list {
+.promo-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.shares-item {
+.promo-item {
     width: 560px;
     min-height: 235px;
     padding: 20px;
     border-radius: 45px;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
-.shares-item h3 {
+.promo-item h3 {
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
 }
 
-.shares-item p {
+.promo-item p {
     font-size: 18px;
     line-height: 22px;
     font-weight: bold;
 }
 
-.shares-rasberry {
+.promo-rasberry {
     background-color: #c5083b;
     background-image: url("../img/rassberry.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
+    
 }
 
-.shares-chocolate {
+.promo-chocolate {
     background-color: #2b190c;
     background-image: url("../img/chocolate.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 .bestsellers-list {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .catalog-list {
@@ -216,26 +217,26 @@ address {
     text-align: center;
 }
 
-.card-product h3 {
+.card-product .card-name {
     font-size: 16px;
     line-height: 23px;
     font-weight: medium;
 }
 
-.card-product p {
+.card-product .card-price {
     font-size: 45px;
     line-height: 13px;
     font-weight: bold;
     text-align: left;
 }
 
-.card-product span {
+.card-price .card-weight {
     font-size: 30px;
     line-height: 13px;
     font-weight: bold;
 }
 
-.card-product img {
+.card-product .card-img {
     border-radius: 50%;
 }
 
@@ -248,7 +249,7 @@ address {
     font: inherit;
     font-size: 32px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0;
     text-align: center;
     line-height: 44px;
@@ -263,7 +264,7 @@ address {
 }
 
 .button-main:active {
-    color: #FCEEEC;
+    color: #fceeec;
     background-image: linear-gradient(0deg, #F26843 0%, #E74A35 100%);
     box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -271,7 +272,7 @@ address {
 .button {
     font: inherit;
     font-size: 18px;
-    color: #FFFFFF;
+    color: #ffffff;
     letter-spacing: 0;
     text-align: center;
     line-height: 24px;
@@ -283,13 +284,13 @@ address {
 }
 
 .button:hover {
-    color: #FEFEFE;
+    color: #fefefe;
     background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
     box-shadow: 0 1px 2px 0 #AC1000;
 }
     
 .button:active {
-    color: #FCEEEC;
+    color: #fceeec;
     background-image: linear-gradient(0deg, #F26843 0%, #E74A35 100%);
     box-shadow: inset 0 2px 2px 0 #942718;
 }
@@ -348,7 +349,7 @@ address {
 }
 
 .mailing {
-    color: #5A5A5A;
+    color: #5a5a5a;
     background-color: #ffffff;
     background-image: url("../img/bg-post.svg");
     background-position: top center;
@@ -392,8 +393,7 @@ address {
 }
 
 .filter fieldset{
-    opacity: 0.2;
-    background: #FFFFFF;
+    background: rgba: (255, 255, 255, 0.2);
     border-radius: 45px;
     border: none;
     height: 39px;
@@ -412,24 +412,23 @@ address {
     padding: 10px 30px;
     font-weight: medium;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 18px;
 }
 
 .filter-button:hover {
-    background: #FFFFFF;
+    background: #ffffff;
     color: #323232;
 }
 
 .filter-button:active {
-    background: #EDEDED;
+    background: #ededed;
     box-shadow: inset 0 2px 1px 0 #696969;
 }
 
 .fillers {
     width: 705px;
-    opacity: 0.2;
-    background: #FFFFFF;
+    background: rgba: (255, 255, 255, 0.2);
     border-radius: 45px;
 }
 
@@ -458,7 +457,7 @@ color: #FFFFFF;
 
 .main-footer li {
     list-style: none;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer-copyright {
