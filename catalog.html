@@ -8,13 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <nav class="main-navigation">
+    <header class="main-header">
+      <nav class="main-navigation container">
         <a href="index.html">
-          <img src="img/logo.svg" width="150" height="100" alt="Логотип компании GllacyShop">
+          <img src="img/logo.svg" width="154" height="64" alt="Логотип компании GllacyShop">
         </a>
         <ul class="site-navigation">
-          <li class="menu-active"><a href="#">Каталог</li>
+          <li class="menu-active"><a href="#">Каталог</a>
             <ul class="submenu">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
@@ -27,6 +27,8 @@
           <li><a href="#">О компании</a></li>
         </ul>
 
+        <div class="user-navigation">
+
         <form action="https://echo.htmlacademy.ru" method="post">
           <button type="submit" aria-label="Найти" class="nav-item search"></button>
           <p class="visually-hidden">
@@ -35,7 +37,9 @@
           </p>  
         </form>
 
-        <ul class="nav-item user-navigation active">
+        
+
+        <ul class="nav-item user-account active">
           <li>
             <a href="#">Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post" class="visually-hidden">
@@ -77,21 +81,22 @@
             <button type="submit">Заказать</button>
           </form>
         </div>
+        </div>
       </nav>
-      <address class="address top-address">
-        <p>с 10 до 20, ежедневно</p>
-        <a href="tel:+78124502525" class="main-address">8 (812) 450-25-25</a>
+      <address class="address top-address container">
+        <p class="adrress-timetable">с 10 до 20, ежедневно</p>
+        <a href="tel:+78124502525" class="main-address">8 812 450-25-25</a>
       </address>
     </header>
     <main>
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs container">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Каталог</a></li>
         <li>Сливочное</li>
       </ul>
-      <h1>Сливочное мороженное</h1>
 
-      <section>
+      <section class="container">
+        <h1 class="filter-section">Сливочное мороженое</h1>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter">
             <fieldset>
@@ -143,7 +148,7 @@
         </form>
       </section>
 
-      <section class="catalog">
+      <section class="catalog container">
         <h2 class="visually-hidden">Список видов мороженного</h2>
         <ul class="catalog-list">
           <li class="card-product">
@@ -232,12 +237,12 @@
       </section>
       
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <ul>
-        <li class="social-button"><a href="" aria-label="Твиттер"></a></li>
-        <li class="social-button"><a href="" aria-label="Инстаграм"></a></li>
-        <li class="social-button"><a href="" aria-label="Фейсбук"></a></li>
-        <li class="social-button"><a href="" aria-label="Вконтакте"></a></li>
+        <li><a href="" class="social-link social-link-twitter" aria-label="Твиттер"></a></li>
+        <li><a href="" class="social-link social-link-instagram" aria-label="Инстаграм"></a></li>
+        <li><a href="" class="social-link social-link-fecebook" aria-label="Фейсбук"></a></li>
+        <li><a href="" class="social-link social-link-vkontakte" aria-label="Вконтакте"></a></li>
       </ul>
 
       <ul class="footer-nav">
