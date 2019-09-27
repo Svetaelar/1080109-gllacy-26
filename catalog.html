@@ -39,8 +39,8 @@
 
         
 
-        <ul class="nav-item user-account active">
-          <li>
+        <ul class="user-account">
+          <li class="nav-item  active">
             <a href="#">Вход</a>
             <form action="https://echo.htmlacademy.ru" method="post" class="visually-hidden">
               <label for="user-email" class="visually-hidden">Емайл</label>
@@ -113,9 +113,12 @@
               <div>
                 <input type="text" name="min" value="100" aria-label="минимальная" readonly> руб - 
                 <input type="text" name="max" value="500" aria-label="максимальная" readonly> руб
-                <div>
-                  <button type="button" aria-label="минимальное значение"></button>
-                  <button type="button" aria-label="максимальное значение"></button>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min" aria-label="минимальное значение"></div>
+                  <div class="range-toggle range-toggle-max" aria-label="максимальное значение"></div>
                 </div>
               </div>
             </fieldset>
@@ -151,78 +154,103 @@
       <section class="catalog container">
         <h2 class="visually-hidden">Список видов мороженного</h2>
         <ul class="catalog-list">
-          <li class="card-product">
-            <h3 class="card-name">Сливочное с апельсиновым джемом и цитрусовой стружкой
-              </h3>
-            <p><img src="img/1_1.jpg" class="card-img" width="267" height="267" alt="Оранжевое мороженое"></p>
-            <p class="card-price">310 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+          <li>
+            <div  class="card-product">
+              <h3 class="card-name">Сливочное с апельсиновым джемом и цитрусовой стружкой
+                </h3>
+              <p><img src="img/1_1.jpg" class="card-img" width="267" height="267" alt="Оранжевое мороженое"></p>
+              <p class="card-price">310 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочно-кофейное с кусочками шоколада</h3>
-            <p><img src="img/1_2.jpg" class="card-img" width="267" height="267" alt="Шоколадное мороженое"></p>
-            <p class="card-price">380 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочно-кофейное с кусочками шоколада</h3>
+              <p><img src="img/1_2.jpg" class="card-img" width="267" height="267" alt="Шоколадное мороженое"></p>
+              <p class="card-price">380 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
-            <p><img src="img/1_3.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
-            <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <p><img src="img/1_3.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
+              <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочное крем-брюле с карамельной подливкой</h3>
-            <p><img src="img/1_4.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с карамелью"></p>
-            <p class="card-price">415 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочное крем-брюле с карамельной подливкой</h3>
+              <p><img src="img/1_4.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с карамелью"></p>
+              <p class="card-price">415 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочное с брусничным джемом</h3>
-            <p><img src="img/2_1.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
-            <p class="card-price">325 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочное с брусничным джемом</h3>
+              <p><img src="img/2_1.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
+              <p class="card-price">325 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочно-черничное с цельными ягодами черники </h3>
-            <p><img src="img/2_2.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с черникой"></p>
-            <p class="card-price">410 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочно-черничное с цельными ягодами черники </h3>
+              <p><img src="img/2_2.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с черникой"></p>
+              <p class="card-price">410 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочно-лимонное с карамельной присыпкой</h3>
-            <p><img src="img/2_3.jpg" class="card-img" width="267" height="267" alt="Жетое мороженое с карамелью"></p>
-            <p class="card-price">375 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочно-лимонное с карамельной присыпкой</h3>
+              <p><img src="img/2_3.jpg" class="card-img" width="267" height="267" alt="Жетое мороженое с карамелью"></p>
+              <p class="card-price">375 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочное с шоколадной стружкой</h3>
-            <p><img src="img/2_4.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадной стружкой"></p>
-            <p class="card-price">320 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочное с шоколадной стружкой</h3>
+              <p><img src="img/2_4.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадной стружкой"></p>
+              <p class="card-price">320 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочно-ванильное с кусочками шоколада</h3>
-            <p><img src="img/3_1.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с шоколадом"></p>
-            <p class="card-price">440 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочно-ванильное с кусочками шоколада</h3>
+              <p><img src="img/3_1.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с шоколадом"></p>
+              <p class="card-price">440 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочноe с ментоловым сиропом</h3>
-            <p><img src="img/3_2.jpg" class="card-img" width="267" height="267" alt="Голубое мороженое"></p>
-            <p class="card-price">435 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочноe с ментоловым сиропом</h3>
+              <p><img src="img/3_2.jpg" class="card-img" width="267" height="267" alt="Голубое мороженое"></p>
+              <p class="card-price">435 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочное с кусочками черного шоколада</h3>
-            <p><img src="img/3_3.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадом"></p>
-            <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочное с кусочками черного шоколада</h3>
+              <p><img src="img/3_3.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадом"></p>
+              <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
           </li>
-           <li class="card-product">
-            <h3 class="card-name">Сливочное с мятным сиропом</h3>
-            <p><img src="img/3_4.jpg" class="card-img" width="267" height="267" alt="Зеленое мороженое"></p>
-            <p class="card-price">420 ₽<span class="card-weight">/кг</span></p>
-            <a href="" class="button">Быстрый просмотр</a>
+           <li>
+            <div class="card-product">
+              <h3 class="card-name">Сливочное с мятным сиропом</h3>
+              <p><img src="img/3_4.jpg" class="card-img" width="267" height="267" alt="Зеленое мороженое"></p>
+              <p class="card-price">420 ₽<span class="card-weight">/кг</span></p>
+            </div>
+            <a href="" class="button card-button">Быстрый просмотр</a>
+            </div>
           </li>
         </ul>
 
@@ -238,29 +266,33 @@
       
     </main>
     <footer class="main-footer container">
-      <ul>
-        <li><a href="" class="social-link social-link-twitter" aria-label="Твиттер"></a></li>
-        <li><a href="" class="social-link social-link-instagram" aria-label="Инстаграм"></a></li>
-        <li><a href="" class="social-link social-link-fecebook" aria-label="Фейсбук"></a></li>
-        <li><a href="" class="social-link social-link-vkontakte" aria-label="Вконтакте"></a></li>
-      </ul>
-
-      <ul class="footer-nav">
-        <li><a href="">Для поставщиков</a></li>
-        <li><a href="">О производстве</a></li>
-        <li><a href="">Наши документы</a></li>
-        <li><a href="">Экологические стандарты</a></li>
-      </ul>
-
-      <p class="footer-copyright">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип компании HtmlAcademy">
-        </a>
-        Сделано в 
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
-        Копирайт 2017
-      </p>
-    </footer>
+        <ul class="social-list">
+         <li><a href="" class="social-link social-link-twitter" aria-label="Твиттер"></a></li>
+         <li><a href="" class="social-link social-link-instagram" aria-label="Инстаграм"></a></li>
+         <li><a href="" class="social-link social-link-fb" aria-label="Фейсбук"></a></li>
+         <li><a href="" class="social-link social-link-vk" aria-label="Вконтакте"></a></li>
+       </ul>
+       <p>
+         <ul class="footer-nav">
+           <li><a href="">Для поставщиков</a></li>
+           <li><a href="">О производстве</a></li>
+         </ul>
+         <ul class="footer-nav">
+           <li><a href="">Наши документы</a></li>
+           <li><a href="">Экологические стандарты</a></li>
+         </ul>
+       </p>
+       <div class="footer-copyright">
+         <a href="https://htmlacademy.ru/intensive/htmlcss">
+           <img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип компании HtmlAcademy">
+         </a>
+         <p>
+         Сделано в 
+         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+         © 2019
+         </p>
+       </div>
+     </footer>
   </body>
 </html>
 
