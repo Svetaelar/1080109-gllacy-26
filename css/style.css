@@ -171,11 +171,42 @@ a {
     padding: 10px 20px;
     height: 16px;
     margin-left: 10px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .nav-item a {
     color: #ffffff;
-    display: block;
+}
+
+.search {
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+}
+
+.nav-item:hover, 
+.nav-item:active,
+.search:hover, 
+.search:active
+{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.nav-item:hover a, 
+.nav-item:active a {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.search:hover path, 
+.search:active path,
+.nav-item:hover path, 
+.nav-item:active path,
+.nav-item:hover circle, 
+.nav-item:active circle {
+    fill: #000000;
 }
 
 .basket::before {
@@ -191,6 +222,7 @@ a {
     margin-left: auto;
     display: flex;
     padding-top: 10px;
+    
 }
 
 .user-account {
@@ -198,6 +230,11 @@ a {
     margin: 0;
     padding: 0;
 }
+
+.login-link {
+    
+}
+
 
 .active {
     background: rgba(255, 255, 255, 0.9);
@@ -452,6 +489,7 @@ a {
 .features-list {
     list-style: none;
     column-count: 2;
+    column-gap: 26px;
     margin: 0;
     padding: 0;
 }
@@ -465,6 +503,7 @@ a {
     min-height: 303px;
     border-radius: 17px;
     margin-top: -8px;
+    position: relative;
 }
 
 .features-heading {
@@ -476,8 +515,67 @@ a {
     padding-bottom: 20px;
 }
 
-.features-list li {
-    color: #000000;
+.features-item {
+    padding-left: 55px;
+    margin-top: 10px;
+    font-family: normal;
+    font-size: 16px;
+    color: #323232;
+    letter-spacing: 0;
+    line-height: 22px;
+}
+
+.icecream::before {
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 19px;
+    width: 49px;
+    height: 49px;
+    
+    background-image: url("../img/ice-cream.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+  }
+
+.thermometer::before {
+    content: "";
+    position: absolute;
+    top: 181px;
+    left: 585px;
+    width: 49px;
+    height: 49px;
+
+    background-image: url("../img/thermometer.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.eco::before {
+    content: "";
+    position: absolute;
+    top: 181px;
+    left: 19px;
+    width: 49px;
+    height: 49px;
+
+    background-image: url("../img/eco.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.cow::before {
+    content: "";
+    position: absolute;
+    top: 95px;
+    left: 585px;
+    width: 49px;
+    height: 49px;
+
+    background-image: url("../img/cow.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 .index-columns {
@@ -629,6 +727,11 @@ a {
 }
 
 .filter fieldset {
+    border-radius: 45px;
+    border: none;
+}
+
+/*.filter fieldset {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
     border: none;
@@ -638,6 +741,7 @@ a {
 .filter fieldset:hover{
     color: #000000;
 }
+*/
 
 .filter-button {
     width: 146px;
@@ -650,6 +754,7 @@ a {
     font-size: 16px;
     color: #ffffff;
     line-height: 18px;
+    margin-top: 27px;
 }
 
 .filter-button:hover {
@@ -662,9 +767,14 @@ a {
     box-shadow: inset 0 2px 1px 0 #696969;
 }
 
+.value-controls {
+    width: 50px;
+
+}
+
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    padding: 10px;
 }
 
 .range-controls .scale {
@@ -680,8 +790,7 @@ a {
 
 .range-toggle {
     position: absolute;
-    top: -9px;
-
+    top: 0;
     width: 4px;
     height: 4px;
     background: #ababab;
@@ -703,19 +812,37 @@ a {
     left: 80%;
 }
 
-.fillers {
-    width: 705px;
+.filter-item {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 45px;
+    padding: 8px;
+}
+
+.filter-item:hover {
+    
+}
+
+.sort {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    border: none;
 }
 
 .pagination-list {
     list-style: none;
     display: flex;
+    justify-content: flex-end;
+}
+
+.pagination-list li {
+    padding: 5px;
 }
 
 .pagination-list a {
-color: #ffffff;
+    color: #ffffff;
+    font-family: medium;
+    font-size: 16px;
+    line-height: 18px;
 }
 
 .main-footer{
@@ -739,26 +866,35 @@ color: #ffffff;
 }
 
 .social-link {
-    width: 32px;
-    height: 32px;
-    padding: 20px;
-    margin: 5px;
-    background: #ffffff;
+    width: 40px;
+    height: 40px;
+    margin-right: 9px;
     border-radius: 50%;
+    display: inline-block;
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 .social-list {
     list-style: none;
     display: flex;
     padding: 0;
+    margin-top: 20px;
+    opacity: 0.8;
 }
 
-.social-link-twittter {
+.social-list:hover {
+    opacity: 1;
+   
+}
+
+.social-link-twitter {
     background-image: url("../img/twitter.svg");
 }
 
 .social-link-instagram {
     background-image: url("../img/instagram.svg");
+   
 }
 
 .social-link-fb {
