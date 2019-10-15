@@ -5,7 +5,30 @@ var loginFeedback = popupFeedback.querySelector ("#feedback-name");
 var emailFeedback = popupFeedback.querySelector ("#feedback-email");
 var textFeedback = popupFeedback.querySelector ("#feedback-text");
 var formFeedback = popupFeedback.querySelector ("form");
-  
+var sliderControls = document.querySelectorAll (".controls");
+var sliderList = document.querySelectorAll (".slider-item");
+var background = ["#849d8f", "#8c9aaa", "#a18f88"];
+var body = document.querySelector ("body")
+
+sliderControls[0].addEventListener ("click", function(){
+  sliderClick(0);
+});
+sliderControls[1].addEventListener ("click", function(){
+  sliderClick(1);
+});
+sliderControls[2].addEventListener ("click", function(){
+  sliderClick(2);
+});
+
+function sliderClick(control){
+    body.style.background = background[control];
+    for (var i=0; i<sliderControls.length; i++){
+      sliderList[i].classList.remove ("modal-show");
+      sliderControls[i].classList.remove ("controls-active");
+    }
+    sliderList[control].classList.add ("modal-show");
+    sliderControls[control].classList.add ("controls-active");
+}
 
 btnFeedback.addEventListener ("click", function(evt){
     evt.preventDefault();
