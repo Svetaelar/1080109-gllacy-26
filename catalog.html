@@ -27,22 +27,18 @@
           <li><a href="#" class="main-menu-link">Доставка и оплата</a></li>
           <li><a href="#" class="main-menu-link">О компании</a></li>
         </ul>
-
         <div class="user-navigation">
-
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <button type="submit" aria-label="Найти" class="button-search">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></button>
-              <div class="search">
-                <p class="modal modal-search">
-                  <label for="id-search" class="visually-hidden">Поиск по сайту</label>
-                  <input id="id-search" type="text" name="search" value="" placeholder="Что ищем?">
-                </p>  
-              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg>
+            </button>
+            <div class="search">
+              <p class="modal modal-search">
+                <label for="id-search" class="visually-hidden">Поиск по сайту</label>
+                <input id="id-search" type="text" name="search" value="" placeholder="Что ищем?">
+              </p>  
+            </div>
           </form>
-
-        
-
           <ul class="user-account">
             <li class="nav-item login-icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
@@ -67,34 +63,33 @@
           <div class="nav-item basket full-basket">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
             <a href="#" class="nav-item-link">2 товара</a>
-          
-        <div class="modal modal-basket">
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <table class="basket-table">
-              <tr class="basket-item">
-                <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
-                <td class="basket-image"><img class="basket-item-image" src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
-                <td class="basket-title"><input type="hidden" name="title" value="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
-                <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
-                <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="200"> 200 руб</td>
-                <td class="basket-total-price"><input type="hidden" name="total-price" value="300"> 300 руб</td>
-              </tr>
-              <tr class="basket-item">
-                <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
-                <td class="basket-image"><img class="basket-item-image" src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
-                <td class="basket-title"><input type="hidden" name="title" value="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
-                <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="300"> 300 руб</td>
-                <td class="basket-total-price" ><input type="hidden" name="total-price" value="450"> 450 руб</td>
-              </tr>
-              <tr class="basket-item">
-                <td colspan="6" class="basket-order-price">Итого<input type="hidden" name="order-price" value="750"> 750 руб. </td>
-              </tr>
-            </table>
-            <button type="submit" class="button">Оформить заказ</button>
-          </form>
-        </div>
-      </div>
+            <div class="modal modal-basket">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <table class="basket-table">
+                  <tr class="basket-item">
+                    <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
+                    <td class="basket-image"><img class="basket-item-image" src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                    <td class="basket-title"><input type="hidden" name="title" value="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
+                    <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
+                    <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="200"> 200 руб</td>
+                    <td class="basket-total-price"><input type="hidden" name="total-price" value="300"> 300 руб</td>
+                  </tr>
+                  <tr class="basket-item">
+                    <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
+                    <td class="basket-image"><img class="basket-item-image" src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                    <td class="basket-title"><input type="hidden" name="title" value="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
+                    <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="300"> 300 руб</td>
+                    <td class="basket-total-price" ><input type="hidden" name="total-price" value="450"> 450 руб</td>
+                  </tr>
+                  <tr class="basket-item">
+                    <td colspan="6" class="basket-order-price">Итого<input type="hidden" name="order-price" value="750"> 750 руб. </td>
+                  </tr>
+                </table>
+                <button type="submit" class="button">Оформить заказ</button>
+              </form>
+            </div>
+          </div>
         </div>
       </nav>
       <address class="address top-address container">
@@ -108,26 +103,22 @@
         <li><a href="#">Каталог</a><span>&raquo;</span></li>
         <li class="breadcrumbs-last">Сливочное</li>
       </ul>
-
       <section class="container">
         <h1 class="filter-section">Сливочное мороженое</h1>
         <form action="https://echo.htmlacademy.ru" method="get">
           <div class="filter">
             <fieldset class="filter-sort">
               <legend>Сортировка</legend>
-              <div class="">
               <select name="sort" class="sort">
                 <option value="popular">по-популярности</option>
                 <option value="inexpensive">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
                 <option value="fat">по-жирности</option>
               </select>
-            </div>
             </fieldset>
             <fieldset>
-              <legend>
-                Цена
-               <input type="text" name="min" class="value-controls" value="100" aria-label="минимальная" readonly> руб - 
+              <legend>Цена
+                <input type="text" name="min" class="value-controls" value="100" aria-label="минимальная" readonly> руб - 
                 <input type="text" name="max" class="value-controls" value="500" aria-label="максимальная" readonly> руб
               </legend>
               <div class="filter-item">
@@ -179,15 +170,15 @@
           <li>
             <div  class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
-                </h3>
+              </h3>
               <p><img src="img/1_1.jpg" class="card-img" width="267" height="267" alt="Оранжевое мороженое"></p>
-              <p class="card-price">310     ₽<span class="card-weight">/кг</span></p>
+              <p class="card-price">310 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
                 <a href="" class="button card-button">Быстрый просмотр</a>
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочно-кофейное с кусочками шоколада</span></h3>
               <p><img src="img/1_2.jpg" class="card-img" width="267" height="267" alt="Шоколадное мороженое"></p>
@@ -197,7 +188,7 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
               <p><img src="img/1_3.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
@@ -207,17 +198,17 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное крем-брюле с карамельной подливкой</span></h3>
               <p><img src="img/1_4.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с карамелью"></p>
               <p class="card-price">415 ₽<span class="card-weight">/кг</span></p>
-            <div class="card-cover">
-              <a href="" class="button card-button">Быстрый просмотр</a>
-            </div> 
-          </div>
+              <div class="card-cover">
+                <a href="" class="button card-button">Быстрый просмотр</a>
+              </div> 
+            </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное с брусничным джемом</span></h3>
               <p><img src="img/2_1.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
@@ -227,17 +218,17 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочно-черничное с цельными ягодами черники</span></h3>
               <p><img src="img/2_2.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с черникой"></p>
               <p class="card-price">410 ₽<span class="card-weight">/кг</span></p>
-            <div class="card-cover">
-              <a href="" class="button card-button">Быстрый просмотр</a>
-            </div> 
-          </div>
+              <div class="card-cover">
+                <a href="" class="button card-button">Быстрый просмотр</a>
+              </div> 
+            </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочно-лимонное с карамельной присыпкой</span></h3>
               <p><img src="img/2_3.jpg" class="card-img" width="267" height="267" alt="Жетое мороженое с карамелью"></p>
@@ -247,7 +238,7 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное с шоколадной стружкой</span></h3>
               <p><img src="img/2_4.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадной стружкой"></p>
@@ -257,7 +248,7 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочно-ванильное с кусочками шоколада</span></h3>
               <p><img src="img/3_1.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с шоколадом"></p>
@@ -267,7 +258,7 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочноe с ментоловым сиропом</span></h3>
               <p><img src="img/3_2.jpg" class="card-img" width="267" height="267" alt="Голубое мороженое"></p>
@@ -277,7 +268,7 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное с кусочками черного шоколада</span></h3>
               <p><img src="img/3_3.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадом"></p>
@@ -287,19 +278,17 @@
               </div> 
             </div>
           </li>
-           <li>
+          <li>
             <div class="card-product">
               <h3 class="card-name"><span class="card-header">Сливочное с мятным сиропом</span></h3>
               <p><img src="img/3_4.jpg" class="card-img" width="267" height="267" alt="Зеленое мороженое"></p>
               <p class="card-price">420 ₽<span class="card-weight">/кг</span></p>
-      
-            <div class="card-cover">
-              <a href="" class="button card-button">Быстрый просмотр</a>
-            </div> 
-          </div>
+              <div class="card-cover">
+                <a href="" class="button card-button">Быстрый просмотр</a>
+              </div> 
+            </div>
           </li>
         </ul>
-
 
         <ul class="pagination-list">
           <li><a href="#" class="pagination-btn pagination-prew"></a></li>
@@ -310,9 +299,7 @@
           <li><a href="#">5</a></li>
           <li><a href="#" class="pagination-btn pagination-next"></a></li>
         </ul>
-        
-      </section>
-      
+      </section>  
     </main>
     <footer class="main-footer container">
       <div class="one-fourth social-container">
@@ -339,7 +326,7 @@
         </a>
         <p>
         Сделано в 
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a>
         © 2019
         </p>
       </div>

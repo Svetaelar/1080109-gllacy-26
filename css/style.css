@@ -38,7 +38,7 @@ body {
     margin: 0 auto;
     padding: 0px 27px;
     position: relative;
-  }
+}
 
 
 
@@ -51,7 +51,7 @@ body {
     overflow: hidden;
     border: 0;
     clip: rect(0 0 0 0);
-  }
+}
 
 a {
     text-decoration: none;
@@ -214,7 +214,6 @@ a {
 .full-basket {
     background: rgba(255, 255, 255, 1);
     margin-bottom: 10px;
-    
 }
 
 .full-basket .nav-item-link {
@@ -224,8 +223,6 @@ a {
 .full-basket:hover .modal-basket {
     display: block;
 }
-
-
 
 .button-search {
     width: 33px;
@@ -331,8 +328,7 @@ a {
     list-style: none;
     padding: 0;
     margin: 0 auto;
-    width: 700px;
-   
+    width: 700px; 
 }
 
 .slider-item {
@@ -480,8 +476,7 @@ a {
     line-height: 13px;
     font-weight: 700;
     position: absolute;
-    top: 224px;
-    
+    top: 224px;  
 }
 
 .card-header {
@@ -535,7 +530,6 @@ a {
     right: 45px;
     min-width: 170px;
     box-sizing: border-box;
-
 }
 
 .card-product:hover .card-cover {
@@ -661,7 +655,7 @@ a {
     margin-bottom: 23px;
 }
 
-.features-item::before{
+.features-item::before {
     content: "";
     position: absolute;
     top: -10px;
@@ -724,6 +718,7 @@ a {
     color: #323232;
     margin:0;
 }
+
 .blog-list a {
     text-decoration: underline;
     text-decoration-color: currentColor;
@@ -747,7 +742,6 @@ a {
     width: 560px;
     padding: 6px;
     border-radius: 17px;
-
 }
 
 .mailing-block {
@@ -766,7 +760,6 @@ a {
     border-radius: 3px;
     padding: 10px;
     box-sizing: border-box;
-
 }
 
 .mailing-block button {
@@ -864,7 +857,6 @@ a {
     margin: 0;
 }
 
-
 .filter legend {
     padding-left: 12px;
     font-weight: 500;
@@ -886,7 +878,6 @@ a {
     border: none;
     padding-left: 0;
     padding-bottom: 15px;
-
 }
 
 .sort {
@@ -909,9 +900,10 @@ a {
 
 .sort:active,
 .sort:focus,
-.sort:hover{
+.sort:hover {
     color:#323232;
-    background:#ffffff url(../img/icon-down-black.svg) no-repeat center right 15px}
+    background:#ffffff url(../img/icon-down-black.svg) no-repeat center right 15px
+}
 
 .filter-button {
     width: 146px;
@@ -949,16 +941,15 @@ a {
 
 .filter input[type^="check"] + label::before,
 .filter input[type^="radio"] + label::before {
-  content: "";
-  display: inline-block;
-  margin-right: 7px;
-  padding-right: 12px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-size: contain;
-  box-sizing: border-box;
-  opacity: 0.8;
-
+    content: "";
+    display: inline-block;
+    margin-right: 7px;
+    padding-right: 12px;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    opacity: 0.8;
 }
 
 .filter input[type^="check"] + label::before {
@@ -975,7 +966,6 @@ a {
     background-size: auto;
     width: 22px;
     height: 22px;
-   
 }
 
 .filter input[type^="check"]:checked + label::before {
@@ -998,12 +988,12 @@ a {
 .filter input[type^="radio"]:hover + label::before,
 .filter input[type^="check"]:focus + label::before,
 .filter input[type^="radio"]:focus + label::before {
-opacity: 1;
+    opacity: 1;
 }
 
 .filter input[type^="check"]:disabled + label::before,
-.filter input[type^="radio"]:disabled + label::before{
-opacity: 0.4;
+.filter input[type^="radio"]:disabled + label::before {
+    opacity: 0.4;
 }
 
 .range-controls {
@@ -1130,7 +1120,6 @@ opacity: 0.4;
     width: 8px;
     transform: rotate(45deg);
     margin-top: 9px;
-    
     margin-left: 13px;
 }
 
@@ -1184,8 +1173,7 @@ opacity: 0.4;
     list-style: none;
     display: flex;
     padding: 0;
-    margin-top: 17px;
-    
+    margin-top: 17px;  
 }
 
 .social-link::before {
@@ -1415,8 +1403,7 @@ opacity: 0.4;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    padding-bottom: 15px;
-    
+    padding-bottom: 15px;  
 }
 
 .basket-table td:not(.basket-image) {
@@ -1471,7 +1458,6 @@ opacity: 0.4;
     background-size: 11px 11px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    
 }
 
 .basket-order-price {
@@ -1507,7 +1493,6 @@ opacity: 0.4;
 .modal-feedback input[type="text"],
 .modal-feedback input[type="email"] {
     width: 270px;
-    
 }
 
 .modal-feedback textarea {
@@ -1531,32 +1516,31 @@ opacity: 0.4;
     height: 17px;
     cursor: pointer;
     background: #f8f7f4;
-    background-image: url("../img/cross-big.svg")
-
+    background-image: url("../img/cross-big.svg");
 }
 
 @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
+        transform: translateY(-2000px);
     }
   
     70% {
-      transform: translateY(30px);
+        transform: translateY(30px);
     }
   
     90% {
-      transform: translateY(-10px);
+        transform: translateY(-10px);
     }
   
     100% {
-      transform: translateY(0);
+        transform: translateY(0);
     }
   }
 
 @keyframes shake {
     0%,
     100% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
   
     10%,
@@ -1564,14 +1548,14 @@ opacity: 0.4;
     50%,
     70%,
     90% {
-      transform: translateX(-10px);
+        transform: translateX(-10px);
     }
   
     20%,
     40%,
     60%,
     80% {
-      transform: translateX(10px);
+        transform: translateX(10px);
     }
 }
 
