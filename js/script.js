@@ -23,10 +23,10 @@ sliderControls[2].addEventListener ("click", function(){
 function sliderClick(control){
     body.style.background = background[control];
     for (var i=0; i<sliderControls.length; i++){
-      sliderList[i].classList.remove ("modal-show");
+      sliderList[i].classList.remove ("slide-show");
       sliderControls[i].classList.remove ("controls-active");
     }
-    sliderList[control].classList.add ("modal-show");
+    sliderList[control].classList.add ("slide-show");
     sliderControls[control].classList.add ("controls-active");
 }
 
@@ -38,12 +38,16 @@ btnFeedback.addEventListener ("click", function(evt){
 btnCloseFeedback.addEventListener ("click", function(evt){
     evt.preventDefault();
     popupFeedback.classList.remove("modal-show");
+    popupFeedback.classList.remove("modal-error");
 })
 
 formFeedback.addEventListener("submit", function (evt) {
     if (!loginFeedback.value || !emailFeedback.value || !textFeedback.value) {
       evt.preventDefault();
+      popupFeedback.classList.remove("modal-error");
+      popupFeedback.offsetWidth = popupFeedback.offsetWidth;
       console.log("Нужно ввести логин и пароль");
+      popupFeedback.classList.add("modal-error");
     }
 });
 
@@ -52,6 +56,7 @@ window.addEventListener("keydown", function (evt) {
       evt.preventDefault();
       if (popupFeedback.classList.contains("modal-show")) {
         popupFeedback.classList.remove("modal-show");
+        popupFeedback.classList.remove("modal-error");
       }
     }
   });

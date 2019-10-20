@@ -41,7 +41,7 @@
           <ul class="user-account">
             <li class="nav-item login-icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-              <a href="#" class="login-link">Вход</a>
+              <a href="#" class="login-link nav-item-link">Вход</a>
               <div class="modal modal-user">
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <label for="user-email" class="visually-hidden">Емайл</label>
@@ -51,8 +51,8 @@
                   <div class="login-group">
                     <button type="submit" class="button">Войти</button>
                     <div class="login-help">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+                      <a href="#" class="modal-user-link">Забыли пароль?</a>
+                      <a href="#" class="modal-user-link">Новая регистрация</a>
                     </div>
                   </div>
                 </form>
@@ -61,7 +61,7 @@
           </ul>
           <div class="nav-item empty-basket basket">
               <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><g fill="#FFF"><path d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/><circle cx="6.984" cy="18" r="2"/><circle cx="15.984" cy="18" r="2"/></g></svg>
-              <a href="" class="basket-link" aria-label="Корзина">Пусто</a>
+              <a href="" class="basket-link nav-item-link" aria-label="Корзина">Пусто</a>
           </div>
         </div>
         </nav>
@@ -81,7 +81,7 @@
           </div>
           <h2 class="visually-hidden">Слайдер</h2>
           <ul class="slider-list">
-            <li class="slider-item modal-show">
+            <li class="slider-item slide-show">
               <h3 class="slider-heading">Крем-брюле и пломбир с малиновым джемом</h3>
               <p class="slider-img"><img src="img/icecream_1.png" width="1042" height="880" alt="Белое с шоколадом и розовое с белым мороженое в вафельном рожке"></p>
               <a href="#" class="button-main">Давайте оба!</a>
@@ -92,7 +92,7 @@
               <a href="#" class="button-main">Давайте оба!</a>
             </li>
             <li class="slider-item">
-              <h3 class="slider-heading">Пломбир с помадкой<br> и клубничный щербет</h3>
+              <h3 class="slider-heading">Пломбир с помадкой и клубничный щербет</h3>
               <p class="slider-img"><img src="img/icecream_3.png"  width="1042" height="880" alt="Беелое мороженое политое шоколадом и розовое в вафльных рожках"></p>
               <a href="#" class="button-main">Давайте оба!</a>
             </li>
@@ -120,10 +120,12 @@
           <ul class="bestsellers-list">
             <li>
               <div class="card-product">
-                <h3 class="card-name">Сливочное с апельсиновым джемом и цитрусовой стружкойСливочное с апельсиновым джемом и цитрусовой стружкойСливочное с апельсиновым джемом и цитрусовой стружкойСливочное с апельсиновым джемом и цитрусовой стружкойempty-basket</h3>
+                
+                <h3 class="card-name"><span class="card-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></h3>
                 <p><img src="img/1_1.jpg" class="card-img" alt="Оранжевое мороженое с белой стружкой"></p>
                 <div class="card-hit"></div>
                 <p class="card-price">310 ₽<span class="card-weight">/кг</span></p>
+              
                 <div class="card-cover">
                   <a href="#" class="button card-button">Быстрый просмотр</a>
                 </div>    
@@ -133,10 +135,10 @@
             <li >
 
               <div class="card-product">
-                <h3 class="card-name">Сливочно-кофейное с кусочками шоколада</h3>
+                <h3 class="card-name"><span class="card-header">Сливочно-кофейное с кусочками шоколада</span></h3>
                 <p><img src="img/1_2.jpg"  class="card-img" width="267" height="267" alt="Шоколадное мороженое с шоколадом"></p>
                 <div class="card-hit"></div>
-                <p class="card-price">380 ₽<span class="card-weight">/кг</span></p>
+                <p class="card-price">380  ₽<span class="card-weight">/кг</span></p>
                 <div class="card-cover">
                   <a href="#" class="button card-button">Быстрый просмотр</a>
                 </div> 
@@ -145,7 +147,7 @@
             </li>
             <li>
               <div class="card-product">
-                <h3 class="card-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+                <h3 class="card-name"><span class="card-header">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
                 <p><img src="img/1_3.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое с белым шоколадом"></p>
                 <div class="card-hit"></div>
                 <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
@@ -159,7 +161,7 @@
             
             <li>
               <div class="card-product">
-                <h3 class="card-name">Сливочное крем-брюле с карамельной подливкой</h3>
+                <h3 class="card-name"><span class="card-header">Сливочное крем-брюле с карамельной подливкой</span></h3>
                 <p><img src="img/1_4.jpg" class="card-img" width="267" height="267" alt="Сливочное мороженое с карамелью"></p>
                 <div class="card-hit"></div>
                 <p class="card-price">415 ₽<span class="card-weight">/кг</span></p>
@@ -195,7 +197,7 @@
         <div class="index-columns container">
           <article class="blog-list">
             <h2>Новое в нашем блоге</h2>
-            <h3>10 способов сервировки фруктовых щербетов к столу </h3>
+            <h3><a>10 способов сервировки фруктовых щербетов к столу </a></h3>
           </article>
 
           <section class="mailing">
@@ -222,7 +224,7 @@
           <img class="map-image" src="img/map.jpg" height="430px" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
           <div class="map-contacts">
             <address class="address">
-              <p class="map-point">Адрес главного офиса<br> и офлайн магазина:</p>
+              <p class="map-point">Адрес главного офиса и офлайн магазина:</p>
               <p class="map-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
             </address>
             <address class="address">
@@ -260,11 +262,11 @@
           </ul>
         </div>
         <div class="half-width links-container">
-          <ul class="footer-nav">
-            <li class="link-provider"><a href="">Для поставщиков</a></li>
-            <li class="link-production"><a href="">О производстве</a></li>
+          <ul class="footer-nav footer-nav-one">
+            <li><a href="" class="link link-provider">Для поставщиков</a></li>
+            <li><a href="">О производстве</a></li>
           </ul>
-          <ul class="footer-nav">
+          <ul class="footer-nav footer-nav-two">
             <li><a href="">Наши документы</a></li>
             <li><a href="">Экологические стандарты</a></li>
           </ul>
@@ -275,7 +277,7 @@
           </a>
           <p>
           Сделано в 
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a>
           © 2019
           </p>
         </div>

@@ -46,7 +46,7 @@
           <ul class="user-account">
             <li class="nav-item login-icon">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="19" viewBox="0 0 21 19"><g fill="#fff"><path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/><path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></svg>
-              <a href="#" class="login-link">Вход</a>
+              <a href="#" class="login-link nav-item-link">Вход</a>
               <div class="modal modal-user">
                 <form action="https://echo.htmlacademy.ru" method="post">
                   <label for="user-email" class="visually-hidden">Емайл</label>
@@ -56,24 +56,24 @@
                   <div class="login-group">
                     <button type="submit" class="button">Войти</button>
                     <div class="login-help">
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
+                      <a href="#" class="modal-user-link">Забыли пароль?</a>
+                      <a href="#" class="modal-user-link">Новая регистрация</a>
                     </div>
                   </div>
                 </form>
               </div>
             </li>
           </ul>
-          <div class="nav-item basket">
+          <div class="nav-item basket full-basket">
             <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20"><path fill="#E84D37" d="M5.888 4.031L6.922 13h10.45l1.176-8.969z"/><circle fill="#343434" cx="6.984" cy="18" r="2"/><circle fill="#343434" cx="15.984" cy="18" r="2"/><path fill="#343434" d="M5.657 2.031L5.422 0H0v2h3.64l1.5 13h13.988l1.699-12.969H5.657zM17.372 13H6.922L5.888 4.031h12.66L17.372 13z"/></svg>
-            <a href="#">2 товара</a>
-          </div>
+            <a href="#" class="nav-item-link">2 товара</a>
+          
         <div class="modal modal-basket">
           <form action="https://echo.htmlacademy.ru" method="post">
             <table class="basket-table">
               <tr class="basket-item">
                 <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
-                <td class="basket-item-image"><img src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                <td class="basket-image"><img class="basket-item-image" src="img/1_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
                 <td class="basket-title"><input type="hidden" name="title" value="Пломбир с апельсиновым джемом">Пломбир с апельсиновым джемом</td>
                 <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
                 <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="200"> 200 руб</td>
@@ -81,7 +81,7 @@
               </tr>
               <tr class="basket-item">
                 <td><button type="button" class="button-del-item" aria-label="Удалить"></button></td>
-                <td class="basket-item-image"><img src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
+                <td class="basket-image"><img class="basket-item-image" src="img/2_mini.jpg" width="33" height="33" alt="Оранжевое мороженое с джемом"></td>
                 <td class="basket-title"><input type="hidden" name="title" value="Клубничный пломбир с присыпкой из белого шоколада">Клубничный пломбир с присыпкой из белого шоколада</td>
                 <td><input type="hidden" name="number" value="1.5">1.5 кг</td>
                 <td class="basket-unit-price">x<input type="hidden" name="unit-price" value="300"> 300 руб</td>
@@ -94,6 +94,7 @@
             <button type="submit" class="button">Оформить заказ</button>
           </form>
         </div>
+      </div>
         </div>
       </nav>
       <address class="address top-address container">
@@ -105,7 +106,7 @@
       <ul class="breadcrumbs container">
         <li><a href="index.html">Главная</a><span>&raquo;</span></li>
         <li><a href="#">Каталог</a><span>&raquo;</span></li>
-        <li> Сливочное</li>
+        <li class="breadcrumbs-last">Сливочное</li>
       </ul>
 
       <section class="container">
@@ -114,7 +115,7 @@
           <div class="filter">
             <fieldset class="filter-sort">
               <legend>Сортировка</legend>
-              <div class="filter-item">
+              <div class="">
               <select name="sort" class="sort">
                 <option value="popular">по-популярности</option>
                 <option value="inexpensive">сначала недорогие</option>
@@ -177,10 +178,10 @@
         <ul class="catalog-list">
           <li>
             <div  class="card-product">
-              <h3 class="card-name">Сливочное с апельсиновым джемом и цитрусовой стружкой
+              <h3 class="card-name"><span class="card-header">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                 </h3>
               <p><img src="img/1_1.jpg" class="card-img" width="267" height="267" alt="Оранжевое мороженое"></p>
-              <p class="card-price">310 ₽<span class="card-weight">/кг</span></p>
+              <p class="card-price">310     ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
                 <a href="" class="button card-button">Быстрый просмотр</a>
               </div> 
@@ -188,7 +189,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочно-кофейное с кусочками шоколада</h3>
+              <h3 class="card-name"><span class="card-header">Сливочно-кофейное с кусочками шоколада</span></h3>
               <p><img src="img/1_2.jpg" class="card-img" width="267" height="267" alt="Шоколадное мороженое"></p>
               <p class="card-price">380 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -198,7 +199,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочно-клубничное с присыпкой из белого шоколада</h3>
+              <h3 class="card-name"><span class="card-header">Сливочно-клубничное с присыпкой из белого шоколада</span></h3>
               <p><img src="img/1_3.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
               <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -208,7 +209,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочное крем-брюле с карамельной подливкой</h3>
+              <h3 class="card-name"><span class="card-header">Сливочное крем-брюле с карамельной подливкой</span></h3>
               <p><img src="img/1_4.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с карамелью"></p>
               <p class="card-price">415 ₽<span class="card-weight">/кг</span></p>
             <div class="card-cover">
@@ -218,7 +219,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочное с брусничным джемом</h3>
+              <h3 class="card-name"><span class="card-header">Сливочное с брусничным джемом</span></h3>
               <p><img src="img/2_1.jpg" class="card-img" width="267" height="267" alt="Розовое мороженое"></p>
               <p class="card-price">325 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -228,7 +229,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочно-черничное с цельными ягодами черники </h3>
+              <h3 class="card-name"><span class="card-header">Сливочно-черничное с цельными ягодами черники</span></h3>
               <p><img src="img/2_2.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с черникой"></p>
               <p class="card-price">410 ₽<span class="card-weight">/кг</span></p>
             <div class="card-cover">
@@ -238,7 +239,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочно-лимонное с карамельной присыпкой</h3>
+              <h3 class="card-name"><span class="card-header">Сливочно-лимонное с карамельной присыпкой</span></h3>
               <p><img src="img/2_3.jpg" class="card-img" width="267" height="267" alt="Жетое мороженое с карамелью"></p>
               <p class="card-price">375 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -248,7 +249,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочное с шоколадной стружкой</h3>
+              <h3 class="card-name"><span class="card-header">Сливочное с шоколадной стружкой</span></h3>
               <p><img src="img/2_4.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадной стружкой"></p>
               <p class="card-price">320 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -258,7 +259,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочно-ванильное с кусочками шоколада</h3>
+              <h3 class="card-name"><span class="card-header">Сливочно-ванильное с кусочками шоколада</span></h3>
               <p><img src="img/3_1.jpg" class="card-img" width="267" height="267" alt="Желтое мороженое с шоколадом"></p>
               <p class="card-price">440 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -268,7 +269,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочноe с ментоловым сиропом</h3>
+              <h3 class="card-name"><span class="card-header">Сливочноe с ментоловым сиропом</span></h3>
               <p><img src="img/3_2.jpg" class="card-img" width="267" height="267" alt="Голубое мороженое"></p>
               <p class="card-price">435 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -278,7 +279,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочное с кусочками черного шоколада</h3>
+              <h3 class="card-name"><span class="card-header">Сливочное с кусочками черного шоколада</span></h3>
               <p><img src="img/3_3.jpg" class="card-img" width="267" height="267" alt="Белое мороженое с шоколадом"></p>
               <p class="card-price">355 ₽<span class="card-weight">/кг</span></p>
               <div class="card-cover">
@@ -288,7 +289,7 @@
           </li>
            <li>
             <div class="card-product">
-              <h3 class="card-name">Сливочное с мятным сиропом</h3>
+              <h3 class="card-name"><span class="card-header">Сливочное с мятным сиропом</span></h3>
               <p><img src="img/3_4.jpg" class="card-img" width="267" height="267" alt="Зеленое мороженое"></p>
               <p class="card-price">420 ₽<span class="card-weight">/кг</span></p>
       
@@ -300,13 +301,11 @@
         </ul>
 
         <ul class="pagination-list">
-          <li><a href=""><</a></li>
-          <li><a href="" class="current">1</a></li>
-          <li><a href="">2</a></li>
-          <li><a href="">3</a></li>
-          <li><a href="">4</a></li>
-          <li><a href="">5</a></li>
-          <li><a href="">></a></li>
+          <li><a href="#" class="current">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
         </ul>
       </section>
       
@@ -321,11 +320,11 @@
         </ul>
       </div>
       <div class="half-width links-container">
-        <ul class="footer-nav">
-          <li ><a href="">Для поставщиков</a></li>
+        <ul class="footer-nav footer-nav-one">
+          <li ><a href="" class="link link-provider">Для поставщиков</a></li>
           <li><a href="">О производстве</a></li>
         </ul>
-        <ul class="footer-nav">
+        <ul class="footer-nav footer-nav-two">
           <li><a href="">Наши документы</a></li>
           <li><a href="">Экологические стандарты</a></li>
         </ul>
@@ -336,7 +335,7 @@
         </a>
         <p>
         Сделано в 
-        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" class="link">HTML Academy</a>
         © 2019
         </p>
       </div>
