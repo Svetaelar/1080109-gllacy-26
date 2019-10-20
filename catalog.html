@@ -31,7 +31,7 @@
         <div class="user-navigation">
 
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <button type="submit nav-item" aria-label="Найти" class="button-search">
+            <button type="submit" aria-label="Найти" class="button-search">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="17" viewBox="0 0 17 17"><path fill="#fff" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/></svg></button>
               <div class="search">
                 <p class="modal modal-search">
@@ -88,7 +88,7 @@
                 <td class="basket-total-price" ><input type="hidden" name="total-price" value="450"> 450 руб</td>
               </tr>
               <tr class="basket-item">
-                <td colspan="6" class="basket-order-price">Итого<input type="hidden" name="order-price" value="750" readonly > 750 руб. </td>
+                <td colspan="6" class="basket-order-price">Итого<input type="hidden" name="order-price" value="750"> 750 руб. </td>
               </tr>
             </table>
             <button type="submit" class="button">Оформить заказ</button>
@@ -145,11 +145,11 @@
               <div class="filter-item filter-fat">
                 <input class="visually-hidden" id="first-fat" type="radio" name="fat" value="0">
                 <label for="first-fat"> 0%</label>
-                <input class="visually-hidden" id="second-fat" type="radio" name="fat" value="0" checked>
+                <input class="visually-hidden" id="second-fat" type="radio" name="fat" value="0" checked> 
                 <label for="second-fat" > до 10%</label>
                 <input class="visually-hidden" id="third-fat" type="radio" name="fat" value="0">
                 <label for="third-fat"> до 30%</label>
-                <input class="visually-hidden" id="fourth-fat" type="radio" name="fat" value="0">
+                <input class="visually-hidden" id="fourth-fat" type="radio" name="fat" value="0" >
                 <label for="fourth-fat"> выше 30%</label>
               </div>
             </fieldset>
@@ -300,13 +300,17 @@
           </li>
         </ul>
 
+
         <ul class="pagination-list">
+          <li><a href="#" class="pagination-btn pagination-prew"></a></li>
           <li><a href="#" class="current">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
+          <li><a href="#" class="pagination-btn pagination-next"></a></li>
         </ul>
+        
       </section>
       
     </main>
