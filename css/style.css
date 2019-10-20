@@ -1070,7 +1070,7 @@ a {
     padding: 2px;
 }
 
-.pagination-list a {
+.pagination-link {
     display: block;
 	width: 26px;
 	line-height: 26px;
@@ -1082,13 +1082,13 @@ a {
 	border-radius: 50%;
 }
 
-.pagination-list a:hover,
-.pagination-list a:focus {
+.pagination-link:hover,
+.pagination-link:focus {
 	color: rgba(50, 50, 50, 1);
 	background: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-list a:active {
+.pagination-link:active {
 	color: rgba(50, 50, 50, 1);
 	background: rgba(255, 255, 255, 1);
 }
@@ -1100,27 +1100,28 @@ a {
     border-radius: 50%;
 }
 
-
-.pagination-prew::before {
-    content: "";
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    border-left: 1px solid rgba(255, 255, 255, 0.2);
+.pagination-btn {
     height: 8px;
     width: 8px;
     transform: rotate(45deg);
     margin-top: 9px;
+}
+
+.pagination-prew {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
     margin-right: 10px;
 }
 
-.pagination-next::after {
-    content: "";
+.pagination-next {
     border-top: 1px solid rgba(255, 255, 255, 1);
     border-right: 1px solid rgba(255, 255, 255, 1);
-    height: 8px;
-    width: 8px;
-    transform: rotate(45deg);
     margin-top: 9px;
     margin-left: 13px;
+}
+
+.pagination-inactive {
+    opacity: 0.2;
 }
 
 .main-footer {
