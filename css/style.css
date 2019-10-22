@@ -189,7 +189,6 @@ a {
 
 .nav-item {
     background: rgba(255, 255, 255, 0.2);
-    padding: 6px 17px;
     margin-left: 10px;
     text-align: center;
     vertical-align: middle;
@@ -207,9 +206,18 @@ a {
 .nav-item .nav-item-link {
     color: #ffffff;
     display: block;
-    padding-left: 7px;
-    padding-top: 1px;
+    padding: 7px 17px 0px 45px;
+    border-radius: 30px;
+    box-sizing: border-box;
 }
+
+.svg-nav-item {
+    position: absolute;
+    top: 5px;
+    left: 16px;
+    z-index: 3;
+}
+
 
 .full-basket {
     background: rgba(255, 255, 255, 1);
@@ -220,9 +228,10 @@ a {
     color: #000000;
 }
 
-.full-basket:hover .modal-basket {
+.full-basket-link:hover + .modal-basket {
     display: block;
 }
+
 
 .button-search {
     width: 33px;
