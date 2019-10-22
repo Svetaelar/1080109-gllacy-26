@@ -86,12 +86,12 @@ a {
     min-height: 120px;
 }
 
+
 .site-navigation>li {
     display: inline-block;
     vertical-align: top;
     position: relative;
     padding-top: 13px;
-    padding-left: 4px;  
     margin-bottom: 5px;
 }
 
@@ -147,6 +147,10 @@ a {
     display: none;
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
     background: #f8f7f4;
+}
+
+.site-navigation {
+    padding-left: 9px;
 }
 
 .submenu-link {
@@ -232,17 +236,11 @@ a {
     display: block;
 }
 
-.modal-basket:before {
-    content: "";
-    height: 5px;
-    display: block;
-    background-color: #849d8f;
-}
-
-.modal-basket:hover {
+.modal-basket:hover,
+.modal-user:hover,
+.modal-user:focus-within {
     display: block
 }
-
 
 .button-search {
     width: 33px;
@@ -312,11 +310,11 @@ a {
 .breadcrumbs a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255,255,255,0.3);
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 .breadcrumbs-last {
-    margin: 0 5px;
+    margin: 0 7px;
 }
 
 .breadcrumbs a:hover,
@@ -326,10 +324,11 @@ a {
 }
 
 .breadcrumbs {
-    margin: -22px auto;
+    margin: -25px 0px 0px 20px;
     padding: 0; 
     display: flex;
     list-style: none;
+    font-size: 14px;
 }
 
 .main-address {
@@ -607,6 +606,7 @@ a {
 }
 
 .button {
+    border: none;
     font: inherit;
     font-size: 18px;
     color: #ffffff;
@@ -834,7 +834,7 @@ a {
     color: #000000;
     width: 270px;
     position: absolute;
-    right: 148px;
+    right: 30px;
     bottom: 60px;
     border-radius: 12px;
     padding: 30px 20px 33px 28px;
@@ -889,7 +889,7 @@ a {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
-    margin-top: 20px;
+    margin-top: 2px;
     margin-bottom: 26px;
 }
 
@@ -913,9 +913,9 @@ a {
     line-height:18px;
     font-weight:500;
     background:rgba(255,255,255, 0.2) url(../img/icon-down-dir.svg) no-repeat center right 15px;
-    padding:8px 15px 9px;
+    padding:8px 13px 9px;
     border-radius: 45px;
-    min-width: 195px;
+    min-width: 193px;
 }
 
 .sort:active,
@@ -1028,7 +1028,7 @@ a {
   }
 
 .range-controls .bar {
-    width: 80%;
+    width: 70%;
     height: 3px;
     background: #ffffff;
 }
@@ -1051,11 +1051,11 @@ a {
 }
 
 .range-toggle-min {
-    left: 15%;
+    left: 10%;
 }
 
 .range-toggle-max {
-    left: 65%;
+    left: 60%;
 }
 
 .filter-item {
@@ -1069,11 +1069,12 @@ a {
 }
 
 .filter-fat {
-    min-width: 417px;
+    min-width: 412px;
+    padding-left: 5px;
 }
 
 .filter-fillers {
-    min-width: 701px;
+    min-width: 700px;
     padding-left: 0;
 }
 
@@ -1310,17 +1311,25 @@ a {
     background: #ffffff;
     border: 1px solid rgba(178,178,178,0.52);
     border-radius: 5px;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
-    color: #999999;
+    color: #323232;
     line-height: 24px;
     margin-bottom: 20px;
     height: 47px;
 }
 
+.mailing-block input[type="email"] {
+    font-weight: 700;
+    font-size: 16px;
+    color: #323232;
+}
+
+
 .modal input[type="text"]:hover,
 .modal input[type="email"]:hover,
 .modal input[type="password"]:hover,
+.mailing-block input[type="email"]:hover,
 .modal textarea:hover {
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
@@ -1329,13 +1338,10 @@ a {
 .modal input[type="text"]:focus-within,
 .modal input[type="email"]:focus-within,
 .modal input[type="password"]:focus-within,
+.mailing-block input[type="email"]:focus-within,
 .modal textarea:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
-    font-weight: 700;
-    font-size: 16px;
-    color: #323232;
-    line-height: 24px;
 }
 
 .modal-search {
@@ -1393,11 +1399,7 @@ a {
     align-items: flex-start;
 }
 
-.user-account:focus-within .modal-user {
-    display: block;
-}
-
-.user-account:hover .modal-user {
+.login-link:hover + .modal-user {
     display: block;
 }
 
@@ -1407,10 +1409,22 @@ a {
     background: none;
 }
 
+.modal-basket::after, 
+.modal-user::after {
+    content: "";
+    height: 5px;
+    width: 200px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: -5px;
+    right: 0;
+} 
+
 .modal-basket {
     width: 542px;
     min-height: 243px;
-    top: 33px;
+    top: 38px;
     right: 0;
     z-index: 1;
     font-weight: 400;
