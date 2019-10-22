@@ -232,6 +232,17 @@ a {
     display: block;
 }
 
+.modal-basket:before {
+    content: "";
+    height: 5px;
+    display: block;
+    background-color: #849d8f;
+}
+
+.modal-basket:hover {
+    display: block
+}
+
 
 .button-search {
     width: 33px;
@@ -1399,7 +1410,7 @@ a {
 .modal-basket {
     width: 542px;
     min-height: 243px;
-    top: 36px;
+    top: 33px;
     right: 0;
     z-index: 1;
     font-weight: 400;
