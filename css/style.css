@@ -307,14 +307,14 @@ a {
     position: relative;
 }
 
+.breadcrumbs span {
+    margin-right: 7px;
+}
+
 .breadcrumbs a {
     color: #ffffff;
     border-bottom: 1px solid rgba(255,255,255,0.3);
-    margin: 0 7px;
-}
-
-.breadcrumbs-last {
-    margin: 0 7px;
+    margin-right: 7px;
 }
 
 .breadcrumbs a:hover,
@@ -324,7 +324,7 @@ a {
 }
 
 .breadcrumbs {
-    margin: -25px 0px 0px 20px;
+    margin: -25px auto 0px auto;
     padding: 0; 
     display: flex;
     list-style: none;
