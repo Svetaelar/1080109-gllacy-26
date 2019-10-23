@@ -232,7 +232,7 @@ a {
     color: #000000;
 }
 
-.full-basket-link:hover + .modal-basket {
+.full-basket:hover .modal-basket {
     display: block;
 }
 
@@ -1325,21 +1325,49 @@ a {
     color: #323232;
 }
 
-
 .modal input[type="text"]:hover,
 .modal input[type="email"]:hover,
-.modal input[type="password"]:hover,
-.mailing-block input[type="email"]:hover,
+.modal input[type="password"]:hover {
+    background: #ffffff;
+    border: 2px solid rgba(154,154,154,0.52);
+    padding-left: 14px;
+}
+
 .modal textarea:hover {
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
+    padding-left: 14px;
+    padding-top: 14px;
+}
+
+.mailing-block input[type="email"]:hover {
+    background: #ffffff;
+    border: 2px solid rgba(154,154,154,0.52);
+    
 }
 
 .modal input[type="text"]:focus-within,
 .modal input[type="email"]:focus-within,
-.modal input[type="password"]:focus-within,
-.mailing-block input[type="email"]:focus-within,
+.modal input[type="password"]:focus-within {
+    background: #ffffff;
+    border: 2px solid rgba(46,136,228,0.52);
+    padding-left: 14px;
+}
+
 .modal textarea:focus-within {
+    background: #ffffff;
+    border: 2px solid rgba(46,136,228,0.52);
+    padding-left: 14px;
+    padding-top: 14px;
+}
+
+.modal input::placeholder,
+.modal textarea::placeholder,
+.mailing-block input::placeholder {
+    font-weight: 400;
+}
+
+.mailing-block input[type="email"]:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
 }
@@ -1399,7 +1427,7 @@ a {
     align-items: flex-start;
 }
 
-.login-link:hover + .modal-user {
+.login-link:hover .modal-user {
     display: block;
 }
 
