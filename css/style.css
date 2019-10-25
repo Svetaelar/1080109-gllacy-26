@@ -955,6 +955,10 @@ a {
     min-width: 193px;
 }
 
+sort::-ms-expand {
+    display: none;
+    }
+
 .sort:active,
 .sort:focus,
 .sort:hover {
