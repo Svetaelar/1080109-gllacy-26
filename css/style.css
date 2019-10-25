@@ -63,15 +63,14 @@ a {
  
 .top-address {
     text-align: right;
-    margin-top: -5px;
+    margin-top: -9px;
 }
 
 .adrress-timetable {
     margin: 0;
-    padding-bottom: 5px;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 22px;
 }
 
 .main-navigation {
@@ -79,6 +78,9 @@ a {
     line-height: 18px;
     display: flex;
     min-height: 65px;
+}
+
+.logo-gllacy {
     padding-top: 10px;
 }
 
@@ -100,6 +102,7 @@ a {
     color: #ffffff;
     padding: 8px 13px;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .main-menu-link:not(.menu-active)::after {
@@ -125,7 +128,7 @@ a {
 }
 
 .menu-active {
-	color: #ffffff;
+    color: #ffffff;
     background: #d07058;
     border-radius: 30px;
 }
@@ -140,31 +143,35 @@ a {
 
 .site-navigation .submenu {
     position: absolute;
-    min-width: 145px;
-    left: -3px;
-    top: calc(100% - 5px);
+    min-width: 143px;
+    left: -7px;
+    top: calc(100% - 6px);
     border-radius: 5px;
     display: none;
     box-shadow: 0 20px 20px 0 rgba(0,0,0,0.40);
     background: #f8f7f4;
+    padding-bottom: 6px;
+    padding-top: 6px;
 }
 
 .site-navigation {
     padding-left: 9px;
+    padding-top: 9px;
 }
 
 .submenu-link {
     font-weight: 400;
     font-size: 14px;
     color: #323232;
-    line-height: 30px;
+    line-height: 16px;
     display: block;
-    padding: 1px 20px;
+    padding: 8px 21px 7px 20px;
 }
 
 .submenu-link-new {
     font-weight: 700;
-    padding: 4px 20px;
+    padding-top: 4px;
+    padding-bottom: 10px;
 }
 
 .submenu-link:hover {
@@ -187,8 +194,8 @@ a {
 
 .line {
     height: 1px;
-	margin: 0 9px 0 6px;
-	background: rgba(53, 53, 53, 0.2);
+    margin: 3px 9px 0px 6px;
+    background: rgba(53, 53, 53, 0.2);
 }
 
 .nav-item {
@@ -202,7 +209,7 @@ a {
     border-radius: 30px;
     position: relative;
     display: flex;
-    height: 33px;
+    height: 32px;
     box-sizing: border-box;
     margin-top: 4px;
 }
@@ -210,16 +217,20 @@ a {
 .nav-item .nav-item-link {
     color: #ffffff;
     display: block;
-    padding: 7px 17px 0px 45px;
+    padding: 7px 15px 0px 45px;
     border-radius: 30px;
     box-sizing: border-box;
 }
 
 .svg-nav-item {
     position: absolute;
-    top: 5px;
+    top: 6px;
     left: 16px;
     z-index: 3;
+}
+
+.svg-nav-item-basket {
+    left: 16px;
 }
 
 
@@ -294,7 +305,7 @@ a {
 .user-navigation {
     margin-left: auto;
     display: flex;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .user-account {
@@ -324,11 +335,12 @@ a {
 }
 
 .breadcrumbs {
-    margin: -25px auto 0px auto;
+    margin: -23px auto -2px auto;
     padding: 0; 
     display: flex;
     list-style: none;
     font-size: 14px;
+    line-height: 16px;
 }
 
 .main-address {
@@ -370,14 +382,15 @@ a {
 
 .slider-img {
     position: absolute;
-    top: -135px;
+    top: -122px;
     left: 80px;
     z-index: -1;
+    margin: 0;
 }
 
 .slider-controls {
     position: absolute;
-    bottom: 20px;
+    bottom: 22px;
     left: 27px;
     z-index: 20;
     font-size: 0;
@@ -392,6 +405,12 @@ a {
     background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls:hover:not(.controls-active),
+.controls:focus:not(.controls-active) {
+    background: rgba(248,247,244,.4);
     cursor: pointer;
 }
 
@@ -435,10 +454,10 @@ a {
 }
 
 .promo-item .button {
-  position: absolute;
-  right: 20px;
-  bottom: 22px;
-  padding: 11px 23px;
+    position: absolute;
+    right: 20px;
+    bottom: 22px;
+    padding: 10px 22px 13px 22px;
 }
 
 .promo-rasberry {
@@ -485,17 +504,19 @@ a {
 .card-product .card-name{
     font-size: 16px;
     line-height: 22px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: -10px;
-    width: 254px;
+    width: 257px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .card-product .card-price {
     font-size: 45px;
-    line-height: 13px;
+    line-height: 45px;
     font-weight: 700;
     position: absolute;
-    top: 224px;  
+    top: 205px;  
 }
 
 .card-header {
@@ -536,12 +557,12 @@ a {
     align-items: flex-start;
     position: relative;
     margin-top: 10px;
-    margin-bottom: 11px
+    margin-bottom: 13px
 }
 
 .card-product .card-button {
     display: none;
-	padding: 11px 0px;
+    padding: 11px 0px;
     font-size: 18px;
     position: absolute;
     bottom: 22px;
@@ -562,24 +583,24 @@ a {
 
 .card-cover {
     position: absolute;
-	top: -5px;
+    top: -5px;
     left: -10px;
     right: 10px;
     bottom: -60px;
-	display: none;
-	width: 289px;
-	min-height: 405px;
-	background: rgba(255, 255, 255, 0.3);
-	border-radius: 10px;
-	z-index: 1;
+    display: none;
+    width: 289px;
+    min-height: 405px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    z-index: 1;
 }
 
 .button-main {
     display: inline-block;
-    padding: 12px 44px;
-    font-weight: 600;
-    font-size: 31px;
-    line-height: 41px;
+    padding: 10px 42px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
     text-align: center;
     color: #ffffff;
     vertical-align: top;
@@ -591,6 +612,7 @@ a {
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     border: none;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
 .button-main:hover,
@@ -609,6 +631,7 @@ a {
     border: none;
     font: inherit;
     font-size: 18px;
+    font-weight: 700;
     color: #ffffff;
     letter-spacing: 0;
     text-align: center;
@@ -647,9 +670,9 @@ a {
     background-position: top center;
     box-sizing: border-box;
     padding: 22px;
-    min-height: 303px;
+    min-height: 304px;
     border-radius: 17px;
-    margin-top: -5px;
+    margin-top: -6px;
 }
 
 .features-heading {
@@ -678,12 +701,24 @@ a {
 .features-item::before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -14px;
     left: 0px;
     width: 49px;
     height: 49px;
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.icecream {
+    margin-top: 5px;
+}
+
+.cow {
+    margin-top: 3px;
+}
+
+.thermometer {
+    margin-top: -3px;
 }
 
 .icecream::before {
@@ -716,7 +751,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     margin-right: 27px;
-    padding: 22px 20px;
+    padding: 23px 20px 21px 20px;
     width: 560px;
     border-radius: 17px;
 }
@@ -726,8 +761,9 @@ a {
     line-height: 22px;
     color: #323232;
     margin: 0;
-    padding-bottom: 7px;
-    padding: 5px;
+    padding-bottom: 4px;
+
+    font-weight: 500;
 }
 
 .blog-list h3 {
@@ -774,16 +810,17 @@ a {
 }
 
 .mailing-block input {
-    margin-top: 37px;
+    margin-top: 36px;
     min-height: 40px;
     min-width: 366px;
     border-radius: 3px;
-    padding: 10px;
+    padding: 8px 12px;
     box-sizing: border-box;
+    border: solid 1px rgba(178,178,178,.52);
 }
 
 .mailing-block button {
-    padding: 10px 18px;
+    padding: 9px 20px 11px;
     margin-left: 7px;
     background-image: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
     box-shadow: 0 2px 2px 0 rgba(172,16,0,0.64);
@@ -859,7 +896,7 @@ a {
     font-weight: 700;
     font-size: 18px;
     color: #323232;
-    line-height: 24px;
+    line-height: 22px;
 }
 
 .address-tel {
@@ -889,15 +926,15 @@ a {
     font-weight: 700;
     font-size: 35px;
     line-height: 41px;
-    margin-top: 2px;
-    margin-bottom: 26px;
+    margin-top: 5px;
+    margin-bottom: 29px;
 }
 
 .filter fieldset {
     border-radius: 45px;
     border: none;
     padding-left: 0;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 .sort {
@@ -912,8 +949,8 @@ a {
     font-size:16px;
     line-height:18px;
     font-weight:500;
-    background:rgba(255,255,255, 0.2) url(../img/icon-down-dir.svg) no-repeat center right 15px;
-    padding:8px 13px 9px;
+    background:rgba(255,255,255, 0.2) url("../img/icon-down-dir.svg") no-repeat center right 15px;
+    padding:8px 15px 9px;
     border-radius: 45px;
     min-width: 193px;
 }
@@ -922,16 +959,16 @@ a {
 .sort:focus,
 .sort:hover {
     color:#323232;
-    background:#ffffff url(../img/icon-down-black.svg) no-repeat center right 15px
+    background: rgba(255,255,255, 0.2) url("../img/icon-down-black.svg") no-repeat center right 15px
 }
 
 .filter-button {
-    width: 146px;
-    height: 39px;
+    width: 144px;
+    height: 36px;
     background: rgba(255,255,255,0.2);
     border: 2px solid #ffffff;
     border-radius: 45px;
-    padding: 10px 30px;
+    padding: 8px 28px;
     font-weight: 500;
     font-size: 16px;
     color: #ffffff;
@@ -946,8 +983,9 @@ a {
 }
 
 .filter-button:active {
-    background: #ededed;
+    background: #eaeaea;
     box-shadow: inset 0 2px 1px 0 #696969;
+    color: #323232;
 }
 
 .value-controls {
@@ -1002,7 +1040,7 @@ a {
     width: 22px;
     height: 22px;
     background-size: contain;
-  }
+}
 
 .filter input[type^="check"]:hover + label::before,
 .filter input[type^="radio"]:hover + label::before,
@@ -1025,7 +1063,7 @@ a {
 .range-controls .scale {
     height: 4px;
     background: rgba(255, 255, 255, 0.3);
-  }
+}
 
 .range-controls .bar {
     width: 70%;
@@ -1043,11 +1081,12 @@ a {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-  }
+}
 
 .range-toggle:hover,
 .range-toggle:focus {
     background: #1c4f80;
+    border-width: 9px;
 }
 
 .range-toggle-min {
@@ -1066,6 +1105,7 @@ a {
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
+    line-height: 18px;
 }
 
 .filter-fat {
@@ -1082,50 +1122,55 @@ a {
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    margin-top: 56px;
-    padding-bottom: 26px;
+    margin-top: 52px;
+    padding-bottom: 28px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .pagination-list li {
-    padding: 2px;
+    padding: 1px;
 }
 
 .pagination-link {
     display: block;
-	width: 26px;
-	line-height: 26px;
-	font-size: 16px;
-	font-weight: 500;
-	text-align: center;
-	text-decoration: none;
-	color: rgba(255, 255, 255, 1);
-	border-radius: 50%;
+    height: 26px;
+    width: 26px;
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 4px;
+    box-sizing: border-box;
 }
 
 .pagination-link:hover,
 .pagination-link:focus {
-	color: rgba(50, 50, 50, 1);
-	background: rgba(255, 255, 255, 0.2);
+    color: rgba(50, 50, 50, 1);
+    background: rgba(255, 255, 255, 0.2);
 }
 
 .pagination-link:active {
-	color: rgba(50, 50, 50, 1);
-	background: rgba(255, 255, 255, 1);
+    color: rgba(50, 50, 50, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
 .pagination-list .current {
-	line-height: 26px;
+    line-height: 18px;
     color: #000000;
-    background: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 50%;
+
+margin-right: 4px;
 }
 
 .pagination-btn {
     height: 8px;
     width: 8px;
     transform: rotate(45deg);
-    margin-top: 9px;
+    margin-top: 7px;
 }
 
 .pagination-prew {
@@ -1137,7 +1182,6 @@ a {
 .pagination-next {
     border-top: 1px solid rgba(255, 255, 255, 1);
     border-right: 1px solid rgba(255, 255, 255, 1);
-    margin-top: 9px;
     margin-left: 13px;
 }
 
@@ -1148,12 +1192,12 @@ a {
 .main-footer {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 18px;
     min-height: 20px;
     font-weight: 400;
     font-size: 12px;
     color: #ffffff;
-    line-height: 22px;
+    line-height: 18px;
 }
 
 .main-footer a {
@@ -1184,7 +1228,6 @@ a {
     margin-right: 9px;
     display: flex;
     position: relative;
-    
 }
 
 .social-link:hover {
@@ -1248,8 +1291,9 @@ a {
     border: 4px solid rgba(255, 255, 255, 0.7);
 }
 
-.link-provider {
+.main-footer .link-provider {
     position: relative;
+    font-weight: 700;
 }
 
 .link-provider::before {
@@ -1264,10 +1308,6 @@ a {
 
 .link-production {
     padding-left: 28px;
-}
-
-.links-container {
-    padding-right: 15px;
 }
 
 .footer-nav-one {
@@ -1323,6 +1363,7 @@ a {
     font-weight: 700;
     font-size: 16px;
     color: #323232;
+    line-height: 24px;
 }
 
 .modal input[type="text"]:hover,
@@ -1343,7 +1384,7 @@ a {
 .mailing-block input[type="email"]:hover {
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
-    
+    padding: 7px 11px;
 }
 
 .modal input[type="text"]:focus-within,
@@ -1365,11 +1406,14 @@ a {
 .modal textarea::placeholder,
 .mailing-block input::placeholder {
     font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .mailing-block input[type="email"]:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
+    padding: 7px 11px;
 }
 
 .modal-search {
@@ -1389,11 +1433,12 @@ a {
 
 .modal-user {
     top: 36px;
-    right: 0;
-    width: 278px;
-    height: 215px;
-    padding: 20px 20px;
+    right: -2px;
+    width: 277px;
+    height: 214px;
+    padding: 20px 19px;
     display: none;
+    box-sizing: border-box;
 }
 
 .modal-user input[type="email"],
@@ -1406,7 +1451,7 @@ a {
     font-weight: 400;
     font-size: 13px;
     color: #323232;
-    line-height: 16px;
+    line-height: 24px;
     background: #f8f7f4;
 }
 
@@ -1419,6 +1464,8 @@ a {
     display: block;
     margin: 0;
     height: 62px;
+    text-align: left;
+    padding-left: 20px;
 }
 
 .login-group {
@@ -1450,9 +1497,9 @@ a {
 } 
 
 .modal-basket {
-    width: 542px;
-    min-height: 243px;
-    top: 38px;
+    width: 539px;
+    min-height: 242px;
+    top: 36px;
     right: 0;
     z-index: 1;
     font-weight: 400;
@@ -1482,15 +1529,11 @@ a {
 .basket-table {
     border-spacing: 5px 18px;
     box-sizing: border-box;
+    padding-left: 13px;
 }
 
 .basket-item {
     vertical-align: top;
-}
-
-.basket-order-price {
-    padding-top: 10px;
-    padding-right: 13px;
 }
 
 .basket-item-image {
@@ -1499,17 +1542,26 @@ a {
 }
 
 .basket-title {
-    width: 245px;
+    width: 232px;
     text-align: left;
+    padding-left: 9px;
+}
+
+.basket-number {
+    text-align: right;
+    min-width: 49px;
 }
 
 .basket-unit-price {
     color:#999999;
-    min-width: 77px;
+    min-width: 76px;
+    text-align: left;
 }
 
 .basket-total-price {
-    padding-right: 35px;
+    padding-right: 31px;
+    padding-left: 5px;
+    min-width: 46px;
 }
 
 .button-del-item {
@@ -1530,6 +1582,8 @@ a {
     line-height: 18px;
     text-align: right;
     border-top: 1px solid #cacac7;
+    padding-top: 10px;
+    padding-right: 8px;
 }
 
 .modal-feedback {
