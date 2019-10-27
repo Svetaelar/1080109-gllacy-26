@@ -1500,6 +1500,8 @@ padding-top: 1px;
     background: #f8f7f4;
     margin: 0;
     padding: 0;
+    text-decoration: underline;
+    text-decoration-color: rgba(50,50,50,.3);
     
 }
 
@@ -1514,7 +1516,7 @@ padding-top: 1px;
 }
 
 .login-help {
-    display: block;
+    display: inline-block;
     margin: 0;
     height: 62px;
     text-align: left;
@@ -1535,6 +1537,7 @@ padding-top: 1px;
 .modal-user-link:focus {
     color: #ffbc9e;
     background: none;
+    text-decoration-color: #ffbc9e;
 }
 
 .modal-basket::after, 
