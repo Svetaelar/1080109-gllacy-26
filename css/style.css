@@ -980,7 +980,7 @@ a {
     min-width: 193px;
 }
 
-sort::-ms-expand {
+.sort::-ms-expand {
     display: none;
     }
 
@@ -1114,16 +1114,17 @@ sort::-ms-expand {
 
 .range-toggle:hover,
 .range-toggle:focus {
-    background: #1c4f80;
     border-width: 9px;
 }
 
 .range-toggle-min {
-    left: 10%;
+    left: 11%;
+    top: 1px;
 }
 
 .range-toggle-max {
     left: 60%;
+    top: 1px;
 }
 
 .filter-item {
@@ -1397,8 +1398,7 @@ padding-top: 1px;
 .modal input[type="password"],
 .modal textarea {
     box-sizing: border-box;
-    padding: 15px;
-    padding-right: 40px;
+    padding: 13px 40px 17px 15px;
     background: #ffffff;
     border: 1px solid rgba(178,178,178,0.52);
     border-radius: 5px;
@@ -1409,6 +1409,8 @@ padding-top: 1px;
     margin-bottom: 20px;
     height: 47px;
 }
+
+
 
 .mailing-block input[type="email"] {
     font-weight: 700;
@@ -1429,7 +1431,7 @@ padding-top: 1px;
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
     padding-left: 14px;
-    padding-top: 14px;
+    padding-top: 12px;
 }
 
 .mailing-block input[type="email"]:hover {
@@ -1741,11 +1743,14 @@ padding-top: 1px;
 }
 
 .modal input::placeholder,
-.modal textarea::placeholder,
+.modal textarea::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .mailing-block input::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
-
-
