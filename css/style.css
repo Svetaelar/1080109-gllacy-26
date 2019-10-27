@@ -40,7 +40,9 @@ body {
     position: relative;
 }
 
-
+.container-map {
+    min-height: 1440px;
+}
 
 .visually-hidden {
     position: absolute;
@@ -375,7 +377,7 @@ a {
     line-height: 60px;
     font-weight: 700;
     margin: 0;
-    padding-top: 270px;
+    padding-top: 272px;
     padding-bottom: 30px;
     min-width: 600px;
 }
@@ -427,10 +429,10 @@ a {
 
 .promo-item {
     width: 560px;
-    min-height: 230px;
+    min-height: 229px;
     padding: 13px 18px;
-    margin-top: 42px;
-    margin-bottom: 3px;
+    margin-top: 41px;
+    margin-bottom: 2px;
     border-radius: 17px;
     background-position: top center;
     background-repeat: no-repeat;
@@ -512,11 +514,17 @@ a {
 }
 
 .card-product .card-price {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 209px;
+    left: 0;
     font-size: 45px;
     line-height: 45px;
     font-weight: 700;
-    position: absolute;
-    top: 205px;  
+    color: #fff;
+    text-shadow: 0.5px 0.9px 3px rgba(49,50,53,.5);
+    z-index: 21;
 }
 
 .card-header {
@@ -524,14 +532,17 @@ a {
 }
 
 .card-price .card-weight {
+    margin-left: 3px;
     font-size: 30px;
-    line-height: 13px;
-    font-weight: 700;
 }
 
 .card-product .card-img {
     border-radius: 50%;
     margin: 0;
+}
+
+.card-currency {
+    padding-right: 0;
 }
 
 .card-product p {
@@ -669,8 +680,8 @@ a {
     background-image: url("../img/waffle-big.jpg");
     background-position: top center;
     box-sizing: border-box;
-    padding: 22px;
-    min-height: 304px;
+    padding: 25px 19px 1px 21px;
+    min-height: 306px;
     border-radius: 17px;
     margin-top: -6px;
 }
@@ -681,7 +692,7 @@ a {
     line-height: 30px;
     font-weight: 500;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 17px;
 }
 
 .features-item {
@@ -727,6 +738,8 @@ a {
 
 .thermometer::before {
     background-image: url("../img/thermometer.svg");
+    top: -12px;
+    left: -3px;
 }
 
 .eco::before {
@@ -735,6 +748,8 @@ a {
 
 .cow::before {
     background-image: url("../img/cow.svg");
+    top: -12px;
+    left: -3px;
 }
 
 .index-columns {
@@ -796,7 +811,7 @@ a {
     background-repeat: no-repeat;
     box-sizing: border-box; 
     width: 560px;
-    padding: 6px;
+    padding: 5px;
     border-radius: 17px;
 }
 
@@ -832,7 +847,7 @@ a {
 
 .map {
     position: relative;
-    margin-top: 40px;
+    margin-top: 39px;
     height: 430px;
     overflow: hidden;
     box-sizing: border-box;
@@ -871,10 +886,10 @@ a {
     color: #000000;
     width: 270px;
     position: absolute;
-    right: 30px;
-    bottom: 60px;
+    right: 27px;
+    top: 64px;
     border-radius: 12px;
-    padding: 30px 20px 33px 28px;
+    padding: 28px 25px 33px 25px;
     font-weight: 400;
     z-index: 2;
     box-sizing: border-box;
@@ -890,6 +905,7 @@ a {
     font-size: 14px;
     color: #323232;
     line-height: 20px;
+    min-height: 77px;
 }
 
 .map-address {
@@ -899,12 +915,21 @@ a {
     line-height: 22px;
 }
 
+.map-contacts .map-address {
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
 .address-tel {
     padding-bottom: 10px;
 }
 
+.map-contacts .address-map-tel {
+    margin-bottom: 4px;
+}
+
 .button-feedback {
-    padding: 10px 10px;
+    padding: 10px 26px 11px;
 }
 
 .filter {
@@ -1227,11 +1252,19 @@ margin-right: 4px;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
-    margin-right: 9px;
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
     display: flex;
     position: relative;
+    border: 3px solid rgba(255,255,255,.5);
+    border-radius: 50%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .social-link:hover {
@@ -1248,15 +1281,15 @@ margin-right: 4px;
 .social-link::before {
     content: "";
     position: absolute;
-    height: 29px;
-    width: 29px;
+    height: 32px;
+    width: 32px;
     display: block;
     opacity: 0.8;
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
-    border: 4px solid rgba(255, 255, 255, 0.8);
+    
 }
 
 .social-link-twitter::before {
@@ -1306,8 +1339,8 @@ margin-right: 4px;
     width: 15px;
     height: 13px;
     position: absolute;
-    top: 2px;
-    left: -20px;
+    top: 3px;
+    left: -22px;
 }
 
 .link-production {
@@ -1319,6 +1352,8 @@ margin-right: 4px;
     padding: 0;
     font-size: 13px;
 }
+
+
 
 .footer-nav-two {
     list-style: none;
@@ -1332,6 +1367,18 @@ margin-right: 4px;
 
 .links-container {
     display: flex;
+}
+
+.links-container li {
+    padding-top: 3px;
+}
+
+.developer-container img {
+    padding-left: 2px;
+}
+
+.developer-container {
+padding-top: 1px;
 }
 
 .modal {
@@ -1406,14 +1453,6 @@ margin-right: 4px;
     padding-top: 14px;
 }
 
-.modal input::placeholder,
-.modal textarea::placeholder,
-.mailing-block input::placeholder {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
 .mailing-block input[type="email"]:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
@@ -1457,6 +1496,14 @@ margin-right: 4px;
     color: #323232;
     line-height: 24px;
     background: #f8f7f4;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.login-help p {
+    padding: 0;
+    margin: 0;
 }
 
 .modal-user .button {
@@ -1693,5 +1740,12 @@ margin-right: 4px;
     display: block;
 }
 
+.modal input::placeholder,
+.modal textarea::placeholder,
+.mailing-block input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
 
 
