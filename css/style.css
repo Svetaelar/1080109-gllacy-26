@@ -760,7 +760,7 @@ a {
 .blog-list h3 {
     font-size: 24px;
     line-height: 30px;
-    width: 280px;
+    width: 282px;
     font-weight: 700;
     color: #323232;
     margin:0;
@@ -854,7 +854,8 @@ a {
     width: 100%;
     left: 0;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    height: auto;
 }
 
 .map-contacts {
@@ -1428,14 +1429,14 @@ padding-top: 1px;
 .modal input[type="password"]:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
-    padding-left: 14px;
+    padding-left: 12px;
 }
 
 .modal textarea:focus-within {
     background: #ffffff;
     border: 2px solid rgba(46,136,228,0.52);
-    padding-left: 14px;
-    padding-top: 14px;
+    padding-left: 12px;
+    padding-top: 5px;
 }
 
 .mailing-block input[type="email"]:focus-within {
