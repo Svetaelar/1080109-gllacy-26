@@ -1398,7 +1398,7 @@ padding-top: 1px;
 .modal input[type="password"],
 .modal textarea {
     box-sizing: border-box;
-    padding: 13px 40px 17px 15px;
+    padding: 13px 40px 18px 13px;
     background: #ffffff;
     border: 1px solid rgba(178,178,178,0.52);
     border-radius: 5px;
@@ -1408,6 +1408,13 @@ padding-top: 1px;
     line-height: 24px;
     margin-bottom: 20px;
     height: 47px;
+}
+
+.modal-feedback input[type="text"],
+.modal-feedback input[type="email"],
+.modal-feedback input[type="password"],
+.modal-feedback textarea {
+    padding: 15px 40px 13px 13px;
 }
 
 
@@ -1424,14 +1431,14 @@ padding-top: 1px;
 .modal input[type="password"]:hover {
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
-    padding-left: 14px;
+    padding-left: 12px;
 }
 
 .modal textarea:hover {
     background: #ffffff;
     border: 2px solid rgba(154,154,154,0.52);
-    padding-left: 14px;
-    padding-top: 12px;
+    padding-left: 12px;
+    padding-top: 5px;
 }
 
 .mailing-block input[type="email"]:hover {
@@ -1508,6 +1515,9 @@ padding-top: 1px;
 .login-help p {
     padding: 0;
     margin: 0;
+    vertical-align: top;
+    min-height: 20px;
+    flex-shrink: 1;
 }
 
 .modal-user .button {
@@ -1516,9 +1526,12 @@ padding-top: 1px;
 }
 
 .login-help {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-between;
+    height: 40px;
     margin: 0;
-    height: 62px;
     text-align: left;
     padding-left: 20px;
 }
@@ -1645,11 +1658,11 @@ padding-top: 1px;
 .modal-feedback {
     top: 50%;
     left: 50%;
-    width: 481px;
-    height: 446px;
-    margin-top: -240px;
-    margin-left: -223px;
-    padding: 5px 25px;
+    width: 477px;
+    height: 442px;
+    margin-top: -223px;
+    margin-left: -237px;
+    padding: 4px 23px;
     position: fixed;
     display: none;
 }
@@ -1670,21 +1683,22 @@ padding-top: 1px;
 
 .modal-feedback textarea {
     width: 100%;
-    min-height: 158px;
+    min-height: 152px;
+    padding-top: 6px;
 }
 
 .modal-feedback .button {
     position: absolute;
-    right: 20px;
-    bottom: 22px;
-    padding: 11px 23px;
+    right: 24px;
+    bottom: 27px;
+    padding: 11px 24px;
 }
 
 .button-close-feedback {
     position: absolute;
     border: none;
     top: 15px;
-    right: 12px;
+    right: 16px;
     width: 18px;
     height: 17px;
     cursor: pointer;
@@ -1750,6 +1764,11 @@ padding-top: 1px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+.modal-feedback input::placeholder,
+.modal-feedback textarea::placeholder {
+    font-size: 16px;
 }
 
 .mailing-block input::placeholder {
