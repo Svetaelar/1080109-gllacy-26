@@ -392,7 +392,8 @@ a {
     cursor: pointer;
 }
 
-.controls-active {
+.controls-active,
+.controls:active {
     background-color: #ffffff;
 }
 
@@ -980,11 +981,12 @@ a {
     color: #ffffff;
     line-height: 18px;
     margin-top: 20px;
+    outline: none;
 }
 
 .filter-button:hover,
 .filter-button:focus {
-    background: #ffffff;
+    background-color: #ededed;
     color: #323232;
 }
 
