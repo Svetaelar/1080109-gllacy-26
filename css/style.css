@@ -393,7 +393,7 @@ a {
 }
 
 .controls-active,
-.controls:active {
+.controls:active:not(.controls-active) {
     background-color: #ffffff;
 }
 
