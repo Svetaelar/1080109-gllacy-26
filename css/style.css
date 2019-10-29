@@ -375,9 +375,11 @@ a {
 }
   
 .controls {
+    border: none;
+    padding: 0;
     display: inline-block;
-    width: 17px;
-    height: 17px;
+    width: 21px;
+    height: 21px;
     margin-right: 8px;
     vertical-align: top;
     background-color: transparent;
