@@ -397,6 +397,10 @@ a {
     background-color: #ffffff;
 }
 
+.controls-active:active {
+    background-color: transparent;
+}
+
 .promo-list {
     list-style: none;
     padding: 0;
@@ -986,14 +990,17 @@ a {
 
 .filter-button:hover,
 .filter-button:focus {
-    background-color: #ededed;
+    background-color: #fbfcfb;
+    border: 2px solid transparent;
     color: #323232;
 }
 
 .filter-button:active {
     background: #eaeaea;
     box-shadow: inset 0 2px 1px 0 #696969;
+    border: none;
     color: #323232;
+    padding: 10px 30px;
 }
 
 .value-controls {
